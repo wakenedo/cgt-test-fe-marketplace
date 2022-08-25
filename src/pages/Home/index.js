@@ -1,35 +1,31 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Stack } from '@mui/material'
+
+
+//Inner Components
+import Welcome from './Welcome'
+import NewestProduct from './NewestProduct'
+import UserInterest from './UserInterest'
+import IntroImage from './IntroImage'
+
 
 const Home = () => {
   return (
     <Box>
-
-
-      <div>
-
-        <Typography
-          fontWeight='bold'
-          sx={{
-            fontSize: {
-              lg: '',
-              md: '65px',
-              xs: ''
-            }
-          }}
+      <Box>
+        <IntroImage />
+        <Welcome />
+        <Stack
+          direction='row'
         >
-          WELCOME TO OUR SHOP !
-        </Typography>
-
-        <p>
-          You are probably interested in <a href="/products/a">A</a>.
-        </p>
-
-        <p>
-          Check out the newest product <a href="/products/b">B</a>!
-        </p>
-      </div>
-
+          <Box>
+            <NewestProduct />
+          </Box>
+          <Box>
+            <UserInterest />
+          </Box>
+        </Stack>
+      </Box>
     </Box>
   )
 }
