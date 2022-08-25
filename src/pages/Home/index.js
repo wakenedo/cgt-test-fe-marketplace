@@ -14,17 +14,33 @@ const Home = () => {
     <Box>
       <Box>
         <IntroImage />
-        <Welcome />
-        <Stack
-          direction='row'
+        <Box
+          marginTop='25px'
+          marginBottom='45px'
         >
-          <Box>
-            <NewestProduct />
-          </Box>
-          <Box>
-            <UserInterest />
-          </Box>
-        </Stack>
+          <Welcome />
+        </Box>
+        <Box>
+          <Stack
+            direction='row'
+          >
+            <Box>
+              <NewestProduct />
+            </Box>
+            <Box
+              sx={{
+                marginLeft: {
+                  lg: '',
+                  md: '22px',
+                  xs: '',
+                }
+              }}
+              marginLeft='22px'
+            >
+              <UserInterest />
+            </Box>
+          </Stack>
+        </Box>
       </Box>
     </Box>
   )
