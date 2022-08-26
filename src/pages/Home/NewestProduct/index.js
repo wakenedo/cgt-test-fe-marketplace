@@ -47,9 +47,20 @@ const NewestProduct = () => {
 
         </Box>
         <Box
-          margin='15px'
-          padding='15px'
           backgroundColor='#fdfdfd'
+          borderRadius='5px'
+          sx={{
+            margin: {
+              lg: '',
+              md: '15px',
+              xs: '',
+            },
+            padding: {
+              lg: '',
+              md: '15px',
+              xs: '',
+            }
+          }}
         >
           <Box
             marginBottom='10px'
@@ -69,7 +80,7 @@ const NewestProduct = () => {
               }}
             >
               Alien Model
-              <a href="/products/b">
+              <a href="/Product/Test">
                 <Box
                   sx={{
                     marginLeft: {

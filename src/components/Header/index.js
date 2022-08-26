@@ -27,7 +27,7 @@ const Header = () => {
         sx={{
           marginLeft: {
             lg: '85%',
-            md: '70%',
+            md: '72%',
             xs: '55px'
           }
         }}

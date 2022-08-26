@@ -10,15 +10,6 @@ const Nav = () => {
       <ul style={{ listStyleType: 'none', display: 'flex' }}>
         <li>
           <a
-            href="/">
-            <Typography>
-              Home
-            </Typography>
-          </a>
-        </li>
-        |
-        <li>
-          <a
             href="/cart">
             <Typography>
               Cart ({cartItems().length})

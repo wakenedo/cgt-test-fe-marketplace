@@ -47,9 +47,20 @@ const UserInterest = () => {
 
         </Box>
         <Box
-          margin='15px'
-          padding='15px'
           backgroundColor='#fdfdfd'
+          borderRadius='5px'
+          sx={{
+            margin: {
+              lg: '',
+              md: '15px',
+              xs: '',
+            },
+            padding: {
+              lg: '',
+              md: '15px',
+              xs: '',
+            }
+          }}
         >
           <Box
             marginBottom='10px'
@@ -67,7 +78,8 @@ const UserInterest = () => {
                 }
               }}
             >
-              Space Suite Model XYZ <a href="/products/b">
+              Space Suite Model XYZ
+              <a href="/Product/Test">
                 <Box
                   sx={{
                     marginLeft: {
