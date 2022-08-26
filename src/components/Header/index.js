@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
+import { useSelector } from 'react-redux'
 
 //Inner Components
 import Nav from './Nav'
