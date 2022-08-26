@@ -9,29 +9,24 @@ import ProductInfo from './ProductInfo'
 const Product = () => {
   return (
     <Box>
+      <Box
+        sx={{
+          marginBottom: {
+            lg: '',
+            md: '25px',
+            xs: '',
+          }
+        }}
+      >
+        <ProductName />
+      </Box>
       <Box>
-        <Box
-          sx={{
-            marginBottom: {
-              lg: '',
-              md: '25px',
-              xs: '',
-            }
-          }}
+        <Stack
+          direction='column'
         >
-          <ProductName />
-        </Box>
-        <Box>
-          <Stack
-            direction='column'
-          >
-            <ProductImage />
-            <ProductInfo />
-
-          </Stack>
-
-        </Box>
-
+          <ProductImage />
+          <ProductInfo />
+        </Stack>
       </Box>
     </Box>
   )
