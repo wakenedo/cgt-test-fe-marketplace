@@ -10,7 +10,7 @@ const UserInterest = () => {
         width: {
           lg: '',
           md: '450px',
-          xs: '',
+          xs: '360px',
         }
       }}
     >
@@ -25,7 +25,7 @@ const UserInterest = () => {
               fontSize: {
                 lg: '',
                 md: '28px',
-                xs: '',
+                xs: '22px',
               }
             }}
           >
@@ -53,12 +53,12 @@ const UserInterest = () => {
             margin: {
               lg: '',
               md: '15px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '15px',
-              xs: '',
+              xs: '10px',
             }
           }}
         >
@@ -74,7 +74,7 @@ const UserInterest = () => {
                 fontSize: {
                   lg: '',
                   md: '22px',
-                  xs: '',
+                  xs: '18px',
                 }
               }}
             >
@@ -85,7 +85,7 @@ const UserInterest = () => {
                     marginLeft: {
                       lg: '',
                       md: '65px',
-                      xs: '',
+                      xs: '45px',
                     }
                   }}
                 >

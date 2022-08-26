@@ -22,6 +22,13 @@ const Home = () => {
         </Box>
         <Box>
           <Stack
+            sx={{
+              flexDirection: {
+                lg: '',
+                md: 'row',
+                xs: 'column'
+              }
+            }}
             direction='row'
           >
             <Box>
