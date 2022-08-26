@@ -49,10 +49,10 @@ const Product = () => {
               backgroundColor='#1CFBD3'
               sx={{
                 width: {
-                  lg: '600px'
+                  lg: '400px'
                 },
                 marginLeft: {
-                  lg: '67.5%'
+                  lg: '78%'
                 },
                 bottom: {
                   lg: '0',
@@ -75,7 +75,7 @@ const Product = () => {
                 <Typography
                   sx={{
                     fontSize: {
-                      lg: '18px',
+                      lg: '16.8px',
                       md: '',
                       xs: '11px',
                     }
@@ -93,7 +93,7 @@ const Product = () => {
                 margin='0 auto'
                 sx={{
                   width: {
-                    lg: '500px',
+                    lg: '350px',
                     md: '80%',
                     xs: '80%',
                   }
@@ -105,7 +105,7 @@ const Product = () => {
                   fontWeight='bold'
                   sx={{
                     fontSize: {
-                      lg: '55px',
+                      lg: '45px',
                       md: '45px',
                       xs: '30px',
                     },
@@ -140,7 +140,7 @@ const Product = () => {
                   onClick={() => console.warn('Not implemented!')}
                   sx={{
                     fontSize: {
-                      lg: '22px',
+                      lg: '13px',
                       md: '18px',
                       xs: '14px',
                     }
