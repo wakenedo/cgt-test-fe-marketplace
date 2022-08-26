@@ -15,38 +15,60 @@ const Home = () => {
       <Box>
         <IntroImage />
         <Box
-          marginTop='25px'
-          marginBottom='45px'
+          sx={{
+            position: {
+              lg: 'sticky'
+            },
+            bottom: {
+              lg: '0px'
+            },
+            backgroundColor: {
+              lg: '#e890fa'
+            }
+          }}
         >
-          <Welcome />
-        </Box>
-        <Box>
-          <Stack
-            sx={{
-              flexDirection: {
-                lg: '',
-                md: 'row',
-                xs: 'column'
-              }
-            }}
-            direction='row'
+          <Box
+            marginTop='25px'
+            marginBottom='45px'
           >
-            <Box>
-              <NewestProduct />
-            </Box>
-            <Box
+            <Welcome />
+          </Box>
+          <Box>
+            <Stack
               sx={{
-                marginLeft: {
+                flexDirection: {
                   lg: '',
-                  md: '22px',
-                  xs: '',
+                  md: 'row',
+                  xs: 'column'
                 }
               }}
-              marginLeft='22px'
+              direction='row'
             >
-              <UserInterest />
-            </Box>
-          </Stack>
+              <Box
+                sx={{
+                  marginLeft: {
+                    lg: '75px',
+                    md: '12.5px'
+
+                  }
+                }}
+              >
+                <NewestProduct />
+              </Box>
+              <Box
+                sx={{
+                  marginLeft: {
+                    lg: '50px',
+                    md: '22px',
+                    xs: '',
+                  }
+                }}
+                marginLeft='22px'
+              >
+                <UserInterest />
+              </Box>
+            </Stack>
+          </Box>
         </Box>
       </Box>
     </Box>

@@ -8,7 +8,7 @@ const UserInterest = () => {
       backgroundColor='#1CFBD3'
       sx={{
         width: {
-          lg: '',
+          lg: '850px',
           md: '450px',
           xs: '360px',
         }
@@ -23,7 +23,7 @@ const UserInterest = () => {
             fontWeight='bold'
             sx={{
               fontSize: {
-                lg: '',
+                lg: '32px',
                 md: '28px',
                 xs: '22px',
               }
@@ -51,12 +51,12 @@ const UserInterest = () => {
           borderRadius='5px'
           sx={{
             margin: {
-              lg: '',
+              lg: '10px',
               md: '15px',
               xs: '10px',
             },
             padding: {
-              lg: '',
+              lg: '20px',
               md: '15px',
               xs: '10px',
             }
@@ -72,7 +72,7 @@ const UserInterest = () => {
               fontWeight='bold'
               sx={{
                 fontSize: {
-                  lg: '',
+                  lg: '24px',
                   md: '22px',
                   xs: '18px',
                 }
@@ -83,7 +83,7 @@ const UserInterest = () => {
                 <Box
                   sx={{
                     marginLeft: {
-                      lg: '',
+                      lg: '445px',
                       md: '65px',
                       xs: '45px',
                     }

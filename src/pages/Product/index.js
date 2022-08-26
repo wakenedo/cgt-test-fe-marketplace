@@ -48,13 +48,19 @@ const Product = () => {
             <Box
               backgroundColor='#1CFBD3'
               sx={{
+                width: {
+                  lg: '600px'
+                },
+                marginLeft: {
+                  lg: '67.5%'
+                },
                 bottom: {
-                  lg: '',
+                  lg: '0',
                   md: '0',
                   xs: '0',
                 },
                 position: {
-                  lg: '',
+                  lg: 'fixed',
                   md: 'sticky',
                   xs: 'sticky',
                 }
@@ -64,11 +70,12 @@ const Product = () => {
                 margin='15px'
                 padding='15px'
                 backgroundColor='#fdfdfd'
+                borderRadius='5px'
               >
                 <Typography
                   sx={{
                     fontSize: {
-                      lg: '',
+                      lg: '18px',
                       md: '',
                       xs: '11px',
                     }
@@ -83,8 +90,14 @@ const Product = () => {
                 display='flex'
                 alignItems='center'
                 justifyContent='space-between'
-                width='80%'
                 margin='0 auto'
+                sx={{
+                  width: {
+                    lg: '500px',
+                    md: '80%',
+                    xs: '80%',
+                  }
+                }}
               >
                 <Typography
                   display='flex'
@@ -92,12 +105,12 @@ const Product = () => {
                   fontWeight='bold'
                   sx={{
                     fontSize: {
-                      lg: '',
+                      lg: '55px',
                       md: '45px',
                       xs: '30px',
                     },
                     marginTop: {
-                      lg: '',
+                      lg: '0px',
                       md: '15px',
                       xs: '5px',
                     },
@@ -108,12 +121,12 @@ const Product = () => {
                     fontWeight='bold'
                     sx={{
                       marginTop: {
-                        lg: '',
+                        lg: '30px',
                         md: '15px',
                         xs: '10px',
                       },
                       marginLeft: {
-                        lg: '',
+                        lg: '5px',
                         md: '5px',
                         xs: '5px',
                       }
@@ -127,7 +140,7 @@ const Product = () => {
                   onClick={() => console.warn('Not implemented!')}
                   sx={{
                     fontSize: {
-                      lg: '',
+                      lg: '22px',
                       md: '18px',
                       xs: '14px',
                     }
