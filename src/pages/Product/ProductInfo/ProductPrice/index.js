@@ -1,9 +1,7 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 
-import products from '../../../../constants/products'
-
-const ProductPrice = () => {
+const ProductPrice = ({ products, id }) => {
   return (
     <Typography
       display='flex'
@@ -22,7 +20,7 @@ const ProductPrice = () => {
         },
       }}
     >
-      {products[1].price},00
+      {products[id]?.price},00
       <Typography
         fontWeight='bold'
         sx={{

@@ -1,13 +1,12 @@
 import React from 'react'
 import { Box } from '@mui/material'
 
-import products from '../../../constants/products.jsx'
 
-const ProductImage = () => {
+const ProductImage = ({ products, id }) => {
   return (
     <Box>
       <img
-        src={products[1].image}
+        src={products[id]?.image}
         alt='product'
         width='100%'
 

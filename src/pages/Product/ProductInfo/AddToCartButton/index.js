@@ -6,7 +6,7 @@ import { Box, Button } from '@mui/material'
 //Assets
 import buyCart from '../../../../assets/Products/Cart.png'
 
-const AddToCartButton = () => {
+const AddToCartButton = ({ products, id }) => {
   const dispatch = useDispatch()
 
 
@@ -15,7 +15,7 @@ const AddToCartButton = () => {
       variant='contained'
       onClick={() =>
         dispatch(addToCart({
-
+          products, id
         }))
       }
       sx={{

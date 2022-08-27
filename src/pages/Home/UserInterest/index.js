@@ -1,8 +1,7 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
-import ProductAImage from '../../../assets/Products/a.jpg'
 
-const UserInterest = () => {
+const UserInterest = ({ userInterest }) => {
   return (
     <Box
       backgroundColor='#1CFBD3'
@@ -37,7 +36,7 @@ const UserInterest = () => {
           margin='0px auto'
         >
           <img
-            src={ProductAImage}
+            src={userInterest?.image}
             alt=''
             style={{
               width: '410px',
@@ -78,8 +77,8 @@ const UserInterest = () => {
                 }
               }}
             >
-              Space Suite Model XYZ
-              <a href="/Product/Test">
+              {userInterest?.title}
+              <a href={`/Product/${userInterest?.id}`}>
                 <Box
                   sx={{
                     marginLeft: {
@@ -97,9 +96,7 @@ const UserInterest = () => {
             </Typography>
 
           </Box>
-          <Typography
-
-          >
+          <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet nunc suscipit, finibus enim egestas, tempus turpis. Donec malesuada nec urna vitae fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam at nisl dignissim, venenatis enim eu, dignissim nunc.
           </Typography>
         </Box>

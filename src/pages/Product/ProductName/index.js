@@ -1,9 +1,10 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 
-import products from '../../../constants/products.jsx'
 
-const ProductName = () => {
+
+const ProductName = ({ products, id }) => {
+  console.log('ProductName', products, id)
   return (
     <Typography
       fontWeight='bold'
@@ -15,7 +16,7 @@ const ProductName = () => {
         }
       }}
     >
-      {products[1].name}
+      {products[id]?.title}
     </Typography>
   )
 }

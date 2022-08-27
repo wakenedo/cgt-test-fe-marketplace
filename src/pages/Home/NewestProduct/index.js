@@ -1,9 +1,8 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
-import ProductBImage from '../../../assets/Products/b.jpg'
 
 
-const NewestProduct = () => {
+const NewestProduct = ({ newestProduct }) => {
   return (
     <Box
       backgroundColor='#1CFBD3'
@@ -37,7 +36,7 @@ const NewestProduct = () => {
           margin='0px auto'
         >
           <img
-            src={ProductBImage}
+            src={newestProduct?.image}
             alt=''
             style={{
               width: '410px',
@@ -79,8 +78,8 @@ const NewestProduct = () => {
                 }
               }}
             >
-              Alien Model
-              <a href="/Product/Test">
+              {newestProduct?.title}
+              <a href={`/Product/${newestProduct?.id}`}>
                 <Box
                   sx={{
                     marginLeft: {

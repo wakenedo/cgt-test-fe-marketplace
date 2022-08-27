@@ -5,7 +5,7 @@ import AddToCartButton from './AddToCartButton/index.js'
 import ProductPrice from './ProductPrice/index.js'
 import ProductDescription from './ProductDescription/index.js'
 
-const ProductInfo = () => {
+const ProductInfo = ({ products, id }) => {
   return (
     <Box
       backgroundColor='#1CFBD3'
@@ -28,7 +28,7 @@ const ProductInfo = () => {
         }
       }}
     >
-      <ProductDescription />
+      <ProductDescription products={products} id={id} />
 
       <Box
         display='flex'
@@ -43,8 +43,8 @@ const ProductInfo = () => {
           }
         }}
       >
-        <ProductPrice />
-        <AddToCartButton />
+        <ProductPrice products={products} id={id} />
+        <AddToCartButton products={products} id={id} />
       </Box>
 
     </Box>
