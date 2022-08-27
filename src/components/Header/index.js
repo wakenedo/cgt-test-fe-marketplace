@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { useSelector } from 'react-redux'
+
 
 //Inner Components
 import Nav from './Nav'
@@ -16,7 +16,7 @@ const Header = () => {
       sx={{
 
         backgroundColor: '#fdfdfd',
-        borderBottom: '1px solid black'
+        borderBottom: '1px solid #4B4B4B'
       }}
     >
       <Box

@@ -9,7 +9,7 @@ const NewestProduct = () => {
       backgroundColor='#1CFBD3'
       sx={{
         width: {
-          lg: '850px',
+          lg: '750px',
           md: '450px',
           xs: '360px',
         },
@@ -17,14 +17,14 @@ const NewestProduct = () => {
     >
       <Stack>
         <Box
-          margin='10px auto'
+          margin='10px 15px'
         >
           <Typography
             fontWeight='bold'
             sx={{
               fontSize: {
                 lg: '32px',
-                md: '28px',
+                md: '27px',
                 xs: '22px',
               }
             }}
@@ -40,8 +40,8 @@ const NewestProduct = () => {
             src={ProductBImage}
             alt=''
             style={{
-              width: '350px',
-              height: '200px'
+              width: '410px',
+              height: '240px'
             }}
           />
 
@@ -84,7 +84,7 @@ const NewestProduct = () => {
                 <Box
                   sx={{
                     marginLeft: {
-                      lg: '580px',
+                      lg: '480px',
                       md: '180px',
                       xs: '140px',
                     }

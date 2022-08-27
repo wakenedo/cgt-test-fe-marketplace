@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Stack } from '@mui/material'
 
 
@@ -8,8 +8,22 @@ import NewestProduct from './NewestProduct'
 import UserInterest from './UserInterest'
 import IntroImage from './IntroImage'
 
+import { api } from '../../api'
 
 const Home = () => {
+  const [newest, setNewest] = useState()
+  const fetchNewestProduct = async () => {
+    await api.get().then((response) => {
+      const products = response.data[0].title
+      setNewest(products)
+      console.log(newest)
+
+    })
+
+  }
+
+
+  console.log(newest)
   return (
     <Box>
       <Box>
@@ -47,19 +61,19 @@ const Home = () => {
               <Box
                 sx={{
                   marginLeft: {
-                    lg: '75px',
-                    md: '12.5px'
+                    lg: '170px',
+                    md: '9px'
 
                   }
                 }}
               >
-                <NewestProduct />
+                <NewestProduct newest={newest} />
               </Box>
               <Box
                 sx={{
                   marginLeft: {
                     lg: '50px',
-                    md: '22px',
+                    md: '10px',
                     xs: '',
                   }
                 }}

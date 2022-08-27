@@ -1,4 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { api } from '../api'
+
+
 
 const cartSlice = createSlice({
   name: 'cart',

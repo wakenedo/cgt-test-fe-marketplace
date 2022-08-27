@@ -8,7 +8,7 @@ const UserInterest = () => {
       backgroundColor='#1CFBD3'
       sx={{
         width: {
-          lg: '850px',
+          lg: '750px',
           md: '450px',
           xs: '360px',
         }
@@ -16,7 +16,7 @@ const UserInterest = () => {
     >
       <Stack>
         <Box
-          margin='10px auto'
+          margin='10px 15px'
 
         >
           <Typography
@@ -24,7 +24,7 @@ const UserInterest = () => {
             sx={{
               fontSize: {
                 lg: '32px',
-                md: '28px',
+                md: '27px',
                 xs: '22px',
               }
             }}
@@ -40,8 +40,8 @@ const UserInterest = () => {
             src={ProductAImage}
             alt=''
             style={{
-              width: '350px',
-              height: '200px'
+              width: '410px',
+              height: '240px'
             }}
           />
 
@@ -83,7 +83,7 @@ const UserInterest = () => {
                 <Box
                   sx={{
                     marginLeft: {
-                      lg: '445px',
+                      lg: '345px',
                       md: '65px',
                       xs: '45px',
                     }

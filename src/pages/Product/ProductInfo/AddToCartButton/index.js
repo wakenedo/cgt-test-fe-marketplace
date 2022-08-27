@@ -5,12 +5,11 @@ import { Box, Button } from '@mui/material'
 
 //Assets
 import buyCart from '../../../../assets/Products/Cart.png'
-import callApi from '../../../../api'
 
 const AddToCartButton = () => {
   const dispatch = useDispatch()
 
-  console.log(callApi())
+
   return (
     <Button
       variant='contained'
