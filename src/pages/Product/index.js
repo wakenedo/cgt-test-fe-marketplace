@@ -7,6 +7,7 @@ import { api } from '../../api'
 import ProductName from './ProductName'
 import ProductImage from './ProductImage'
 import ProductInfo from './ProductInfo'
+import ProductText from './ProductText'
 
 const Product = () => {
   const { id } = useParams()
@@ -38,8 +39,10 @@ const Product = () => {
           direction='column'
         >
           <ProductImage products={products} id={id} />
+          <ProductText products={products} id={id} />
           <ProductInfo products={products} id={id} />
         </Stack>
+
       </Box>
     </Box>
   )
