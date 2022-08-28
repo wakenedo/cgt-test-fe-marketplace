@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
+import checkoutNewest from '../../../assets/Home/checkoutNewest.png'
 
 
 const NewestProduct = ({ newestProduct }) => {
@@ -18,19 +19,11 @@ const NewestProduct = ({ newestProduct }) => {
         <Box
           margin='10px 15px'
         >
-          <Typography
-            fontWeight='bold'
-            sx={{
-              fontSize: {
-                lg: '32px',
-                md: '27px',
-                xs: '22px',
-              }
+          <img src={checkoutNewest} alt='user-interest'
+            style={{
+              width: '100%'
             }}
-          >
-            Check out the newest product !
-
-          </Typography>
+          />
         </Box>
         <Box
           margin='0px auto'
@@ -70,6 +63,7 @@ const NewestProduct = ({ newestProduct }) => {
               alignItems='center'
               display='flex'
               fontWeight='bold'
+              color='#4B4B4B'
               sx={{
                 fontSize: {
                   lg: '24px',

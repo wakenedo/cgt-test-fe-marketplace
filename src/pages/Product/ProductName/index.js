@@ -8,6 +8,7 @@ const ProductName = ({ products, id }) => {
   return (
     <Typography
       fontWeight='bold'
+      color='#4B4B4B'
       sx={{
         fontSize: {
           lg: '55px',

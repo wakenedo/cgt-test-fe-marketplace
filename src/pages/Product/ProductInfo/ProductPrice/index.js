@@ -7,6 +7,7 @@ const ProductPrice = ({ products, id }) => {
       display='flex'
       alignItems='center'
       fontWeight='bold'
+      color='#4B4B4B'
       sx={{
         fontSize: {
           lg: '45px',

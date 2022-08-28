@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 
+import UserInterestImage from '../../../assets/Home/UserInterestImage.png'
+
 const UserInterest = ({ userInterest }) => {
   return (
     <Box
@@ -18,19 +20,12 @@ const UserInterest = ({ userInterest }) => {
           margin='10px 15px'
 
         >
-          <Typography
-            fontWeight='bold'
-            sx={{
-              fontSize: {
-                lg: '32px',
-                md: '27px',
-                xs: '22px',
-              }
+          <img src={UserInterestImage} alt='user-interest'
+            style={{
+              width: '100%'
             }}
-          >
-            Your probably interested in !
+          />
 
-          </Typography>
         </Box>
         <Box
           margin='0px auto'
@@ -69,6 +64,7 @@ const UserInterest = ({ userInterest }) => {
               alignItems='center'
               display='flex'
               fontWeight='bold'
+              color='#4B4B4B'
               sx={{
                 fontSize: {
                   lg: '24px',
