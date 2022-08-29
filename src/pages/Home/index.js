@@ -34,9 +34,8 @@ const Home = () => {
     <Box>
       <Box>
         <IntroImage />
-        <Box
 
-        >
+        <Box>
           <Box
             marginTop='25px'
             marginBottom='45px'
