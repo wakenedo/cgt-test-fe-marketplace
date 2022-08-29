@@ -28,14 +28,14 @@ const UserInterest = ({ userInterest }) => {
 
         </Box>
         <Box
-          margin='0px auto'
+          margin='0px 15px'
         >
           <img
             src={userInterest?.image}
             alt=''
             style={{
-              width: '410px',
-              height: '240px'
+              width: '100%',
+              height: '100%'
             }}
           />
 

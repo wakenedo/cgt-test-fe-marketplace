@@ -35,17 +35,7 @@ const Home = () => {
       <Box>
         <IntroImage />
         <Box
-          sx={{
-            position: {
-              lg: 'sticky'
-            },
-            bottom: {
-              lg: '0px'
-            },
-            backgroundColor: {
-              lg: '#e890fa'
-            }
-          }}
+
         >
           <Box
             marginTop='25px'
