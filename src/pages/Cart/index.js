@@ -7,6 +7,7 @@ import CartItem from './CartItem'
 const Cart = () => {
   const cart = useSelector((state) => state.cart)
 
+  console.log('Cart Log', cart)
 
   return (
     <Box>
@@ -16,8 +17,8 @@ const Cart = () => {
       </Typography>
 
 
-      {cart?.map((item) => (
-        <CartItem />
+      {cart?.map((product, id) => (
+        <CartItem product={product} id={id} />
       ))}
 
     </Box>
