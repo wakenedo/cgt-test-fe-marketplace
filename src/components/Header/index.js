@@ -27,9 +27,9 @@ const Header = () => {
       <Box
         sx={{
           marginLeft: {
-            lg: '85%',
-            md: '72%',
-            xs: '80px'
+            lg: '88%',
+            md: '75%',
+            xs: '135px'
           }
         }}
       >

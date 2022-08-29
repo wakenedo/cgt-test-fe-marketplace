@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 
 import AddToCartButton from './AddToCartButton/index.js'
 import ProductPrice from './ProductPrice/index.js'
 import ProductDescription from './ProductDescription/index.js'
+import LessDetail from './LessDetail/index.js'
+import MoreDetail from './MoreDetail/index.js'
 
-import arrowUp from '../../../assets/Products/ProductInfo/up-arrow-svgrepo-com(square).png'
-import arrowDown from '../../../assets/Products/ProductInfo/down-arrow-svgrepo-com(square).png'
 
 const ProductInfo = ({ products, id }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,85 +41,10 @@ const ProductInfo = ({ products, id }) => {
           }
         }}
       >
-        <Box
-          sx={{
-            borderBottom: '1px solid #4B4B4B',
-            margin: {
-              lg: '5px',
-              md: '',
-              xs: '',
-            },
-            padding: {
-              lg: '5px',
-              md: '',
-              xs: '',
-            },
+        <LessDetail toggleIsClosing={toggleIsClosing} products={products} id={id} />
 
-          }}
-        >
-          <Box
-            onClick={() => toggleIsClosing()}
-            sx={{
-              marginLeft: {
-                lg: '215px',
-                md: '395px',
-                xs: '150px',
-              }
-            }}
-          >
-            <Box
-              sx={{
-                marginLeft: {
-                  lg: '22px',
-                  md: '27px',
-                  xs: '21px',
-                }
-              }}
-            >
-              <img src={arrowDown} alt='arrow-up'
-                style={{
-                  width: '25px',
-                }}
-              />
-            </Box>
-            <Typography
-              sx={{
-                color: '#4B4B4B',
-                fontSize: {
-                  lg: '12px',
-                  md: '',
-                  xs: '12px',
-                }
-              }}
-            >
-              Less Details
-            </Typography>
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            marginLeft: {
-              lg: '135px',
-              md: '330px',
-              xs: '80px',
-            }
-          }}
-        >
-          <Typography
-            sx={{
-              color: '#4B4B4B',
-              fontSize: {
-                lg: '22px',
-                md: '20px',
-                xs: '18px',
-              }
-            }}
-          >
-            {products[id]?.title}
-          </Typography>
-
-        </Box>
         <ProductDescription products={products} id={id} />
+
 
         <Box
           display='flex'
@@ -163,84 +88,8 @@ const ProductInfo = ({ products, id }) => {
           }
         }}
       >
-        <Box
-          sx={{
-            borderBottom: '1px solid #4B4B4B',
-            margin: {
-              lg: '5px',
-              md: '',
-              xs: '',
-            },
-            padding: {
-              lg: '5px',
-              md: '',
-              xs: '',
-            },
+        <MoreDetail toggleIsOpen={toggleIsOpen} products={products} id={id} />
 
-          }}
-        >
-          <Box
-            onClick={() => toggleIsOpen()}
-            sx={{
-              marginLeft: {
-                lg: '215px',
-                md: '395px',
-                xs: '150px',
-              }
-            }}
-          >
-            <Box
-              sx={{
-                marginLeft: {
-                  lg: '22px',
-                  md: '27px',
-                  xs: '21px',
-                }
-              }}
-            >
-              <img src={arrowUp} alt='arrow-up'
-                style={{
-                  width: '25px',
-                }}
-              />
-            </Box>
-            <Typography
-              sx={{
-                color: '#4B4B4B',
-                fontSize: {
-                  lg: '12px',
-                  md: '',
-                  xs: '12px',
-                }
-              }}
-            >
-              More Details
-            </Typography>
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            marginLeft: {
-              lg: '135px',
-              md: '330px',
-              xs: '80px',
-            }
-          }}
-        >
-          <Typography
-            sx={{
-              color: '#4B4B4B',
-              fontSize: {
-                lg: '22px',
-                md: '20px',
-                xs: '18px',
-              }
-            }}
-          >
-            {products[id]?.title}
-          </Typography>
-
-        </Box>
         <Box
           display='flex'
           alignItems='center'
