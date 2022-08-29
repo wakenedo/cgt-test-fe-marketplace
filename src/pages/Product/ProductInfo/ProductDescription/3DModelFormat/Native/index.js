@@ -10,8 +10,8 @@ const Native = () => {
           color='#4B4B4B'
           sx={{
             fontSize: {
-              lg: '',
-              md: '18px',
+              lg: '15px',
+              md: '15px',
               xs: '',
             }
           }}
@@ -26,15 +26,15 @@ const Native = () => {
             display: {
               lg: '',
               md: 'flex',
-              xs: '',
+              xs: 'flex',
             }
           }}
         >
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -52,8 +52,8 @@ const Native = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -63,8 +63,8 @@ const Native = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -74,8 +74,8 @@ const Native = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -85,8 +85,8 @@ const Native = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}

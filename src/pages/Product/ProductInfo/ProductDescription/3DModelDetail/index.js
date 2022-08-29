@@ -11,9 +11,9 @@ const _3DModelDetail = () => {
       backgroundColor='#D9D9D9'
       sx={{
         width: {
-          lg: '',
+          lg: '380px',
           md: '405px',
-          xs: '',
+          xs: '285px',
         },
         margin: {
           lg: '',
@@ -23,7 +23,7 @@ const _3DModelDetail = () => {
         padding: {
           lg: '',
           md: '20px',
-          xs: '',
+          xs: '10px',
         }
       }}
     >
@@ -32,7 +32,7 @@ const _3DModelDetail = () => {
         color='#4B4B4B'
         sx={{
           fontSize: {
-            lg: '',
+            lg: '15px',
             md: '18px',
             xs: '',
           }
@@ -46,7 +46,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -58,7 +58,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -80,7 +80,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -92,7 +92,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -114,7 +114,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flexflex',
           },
           margin: {
             lg: '',
@@ -126,7 +126,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -146,7 +146,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -158,7 +158,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -178,7 +178,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -190,7 +190,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -210,7 +210,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -222,7 +222,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -242,7 +242,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -254,7 +254,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -276,7 +276,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -288,7 +288,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -310,7 +310,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -322,7 +322,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -344,7 +344,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -356,7 +356,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -376,7 +376,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -388,7 +388,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -408,7 +408,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -420,7 +420,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -440,7 +440,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -452,7 +452,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }
@@ -474,7 +474,7 @@ const _3DModelDetail = () => {
           display: {
             lg: '',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           margin: {
             lg: '',
@@ -486,7 +486,7 @@ const _3DModelDetail = () => {
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '14px',
               xs: '',
             }

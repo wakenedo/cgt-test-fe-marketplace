@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Box, Typography, Stack } from '@mui/material'
 
-const Header = () => {
-  const [isActive, setIsActive] = useState(false)
+const Header = ({ isActive, toggleActive }) => {
 
-  const toggleActive = (e) => {
-    setIsActive(e.target.innerHTML)
-  }
 
   return (
     <Box
@@ -23,12 +19,22 @@ const Header = () => {
         spacing='24px'
       >
         <Box
-          padding='10px'
+          padding='15px'
           sx={{
             cursor: 'pointer',
             borderBottom: {
               lg: '',
-              md: isActive === 'Description' ? '1px solid #4B4B4B' : null,
+              md: isActive === 'Description' ? '2px solid #4B4B4B' : null,
+              xs: '',
+            },
+            backgroundColor: {
+              lg: '',
+              md: isActive === 'Description' ? '#e0e0e0' : null,
+              xs: '',
+            },
+            color: {
+              lg: '',
+              md: isActive === 'Description' ? '#4B4B4B' : '#c9c9c9',
               xs: '',
             }
           }}
@@ -40,12 +46,22 @@ const Header = () => {
           </Typography>
         </Box>
         <Box
-          padding='10px'
+          padding='15px'
           sx={{
             cursor: 'pointer',
             borderBottom: {
               lg: '',
-              md: isActive === 'Comments' ? '1px solid #4B4B4B' : null,
+              md: isActive === 'Comments' ? '2px solid #4B4B4B' : null,
+              xs: '',
+            },
+            backgroundColor: {
+              lg: '',
+              md: isActive === 'Comments' ? '#e0e0e0' : null,
+              xs: '',
+            },
+            color: {
+              lg: '',
+              md: isActive === 'Comments' ? '#4B4B4B' : '#c9c9c9',
               xs: '',
             }
           }}
@@ -56,12 +72,22 @@ const Header = () => {
           </Typography>
         </Box>
         <Box
-          padding='10px'
+          padding='15px'
           sx={{
             cursor: 'pointer',
             borderBottom: {
               lg: '',
-              md: isActive === 'Reviews' ? '1px solid #4B4B4B' : null,
+              md: isActive === 'Reviews' ? '2px solid #4B4B4B' : null,
+              xs: '',
+            },
+            backgroundColor: {
+              lg: '',
+              md: isActive === 'Reviews' ? '#e0e0e0' : null,
+              xs: '',
+            },
+            color: {
+              lg: '',
+              md: isActive === 'Reviews' ? '#4B4B4B' : '#c9c9c9',
               xs: '',
             }
           }}

@@ -13,9 +13,14 @@ const _3DModelFormat = () => {
       <TableContainer
         sx={{
           height: {
-            lg: '',
+            lg: '225px',
             md: '465px',
-            xs: '',
+            xs: '185px',
+          },
+          width: {
+
+            md: 'auto',
+
           }
         }}
       >
@@ -23,19 +28,19 @@ const _3DModelFormat = () => {
 
           sx={{
             width: {
-              lg: '',
+              lg: '410px',
               md: '405px',
-              xs: '',
+              xs: '300px',
             },
             margin: {
-              lg: '',
+              lg: '5px',
               md: '10px',
-              xs: '',
+              xs: '2px',
             },
             padding: {
-              lg: '',
+              lg: '5px',
               md: '10px',
-              xs: '',
+              xs: '5',
             }
           }}
         >
@@ -55,12 +60,12 @@ const _3DModelFormat = () => {
           <Box
             sx={{
               margin: {
-                lg: '',
+                lg: '5px',
                 md: '5px',
                 xs: '',
               },
               padding: {
-                lg: '',
+                lg: '2px',
                 md: '2px',
                 xs: '',
               }
@@ -71,12 +76,12 @@ const _3DModelFormat = () => {
           <Box
             sx={{
               margin: {
-                lg: '',
+                lg: '5px',
                 md: '5px',
                 xs: '',
               },
               padding: {
-                lg: '',
+                lg: '2px',
                 md: '2px',
                 xs: '',
               }

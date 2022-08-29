@@ -10,7 +10,7 @@ const ProductPrice = ({ products, id }) => {
       color='#4B4B4B'
       sx={{
         fontSize: {
-          lg: '45px',
+          lg: '35px',
           md: '45px',
           xs: '30px',
         },
@@ -26,7 +26,7 @@ const ProductPrice = ({ products, id }) => {
         fontWeight='bold'
         sx={{
           marginTop: {
-            lg: '30px',
+            lg: '15px',
             md: '15px',
             xs: '10px',
           },

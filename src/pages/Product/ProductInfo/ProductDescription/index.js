@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Stack } from '@mui/material'
+import { Box } from '@mui/material'
 
 import _3DModelFormat from './3DModelFormat'
 import _3DModelDetail from './3DModelDetail'
@@ -12,14 +12,23 @@ const Product3DModal = () => {
       backgroundColor='#fdfdfd'
       borderRadius='5px'
     >
-      <Stack
-        direction='row'
+      <Box
+        sx={{
+          display: {
+            lg: 'flex',
+            md: 'flex',
+            xs: '',
+          },
+          flexDirection: {
+            lg: 'column',
+          }
+        }}
       >
 
         <_3DModelFormat />
         <_3DModelDetail />
 
-      </Stack>
+      </Box>
     </Box>
   )
 }

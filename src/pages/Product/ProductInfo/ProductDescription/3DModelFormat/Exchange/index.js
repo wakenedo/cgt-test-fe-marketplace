@@ -10,7 +10,7 @@ const Exchange = () => {
         sx={{
           fontSize: {
             lg: '',
-            md: '18px',
+            md: '15px',
             xs: '',
           }
         }}
@@ -24,15 +24,15 @@ const Exchange = () => {
             display: {
               lg: '',
               md: 'flex',
-              xs: '',
+              xs: 'flex',
             }
           }}
         >
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -53,15 +53,15 @@ const Exchange = () => {
             display: {
               lg: '',
               md: 'flex',
-              xs: '',
+              xs: 'flex',
             }
           }}
         >
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -79,8 +79,8 @@ const Exchange = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -90,8 +90,8 @@ const Exchange = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -110,8 +110,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -121,8 +121,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -136,15 +136,15 @@ const Exchange = () => {
               display: {
                 lg: '',
                 md: 'flex',
-                xs: '',
+                xs: 'flex',
               }
             }}
           >
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -164,8 +164,8 @@ const Exchange = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -175,8 +175,8 @@ const Exchange = () => {
           <Typography
             sx={{
               fontSize: {
-                lg: '',
-                md: '14px',
+                lg: '12px',
+                md: '12px',
                 xs: '',
               }
             }}
@@ -187,8 +187,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -198,8 +198,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -211,8 +211,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -222,8 +222,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -235,8 +235,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -246,8 +246,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -259,8 +259,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -270,8 +270,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -291,8 +291,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -302,8 +302,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -317,7 +317,7 @@ const Exchange = () => {
               display: {
                 lg: '',
                 md: 'flex',
-                xs: '',
+                xs: 'flex',
               },
               marginBottom: {
                 lg: '',
@@ -329,8 +329,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -351,7 +351,7 @@ const Exchange = () => {
               display: {
                 lg: '',
                 md: 'flex',
-                xs: '',
+                xs: 'flex',
               },
               marginBottom: {
                 lg: '',
@@ -363,8 +363,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -384,7 +384,7 @@ const Exchange = () => {
               display: {
                 lg: '',
                 md: 'flex',
-                xs: '',
+                xs: 'flex',
               },
               marginBottom: {
                 lg: '',
@@ -396,8 +396,8 @@ const Exchange = () => {
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
@@ -417,15 +417,15 @@ const Exchange = () => {
               display: {
                 lg: '',
                 md: 'flex',
-                xs: '',
+                xs: 'flex',
               },
             }}
           >
             <Typography
               sx={{
                 fontSize: {
-                  lg: '',
-                  md: '14px',
+                  lg: '12px',
+                  md: '12px',
                   xs: '',
                 }
               }}
