@@ -23,19 +23,19 @@ const Header = ({ isActive, toggleActive }) => {
           sx={{
             cursor: 'pointer',
             borderBottom: {
-              lg: '',
+              lg: isActive === 'Description' ? '2px solid #4B4B4B' : null,
               md: isActive === 'Description' ? '2px solid #4B4B4B' : null,
-              xs: '',
+              xs: isActive === 'Description' ? '2px solid #4B4B4B' : null,
             },
             backgroundColor: {
-              lg: '',
+              lg: isActive === 'Description' ? '#e0e0e0' : null,
               md: isActive === 'Description' ? '#e0e0e0' : null,
-              xs: '',
+              xs: isActive === 'Description' ? '#e0e0e0' : null,
             },
             color: {
-              lg: '',
+              lg: isActive === 'Description' ? '#4B4B4B' : '#c9c9c9',
               md: isActive === 'Description' ? '#4B4B4B' : '#c9c9c9',
-              xs: '',
+              xs: isActive === 'Description' ? '#4B4B4B' : '#c9c9c9',
             }
           }}
           onClick={toggleActive}
@@ -50,19 +50,19 @@ const Header = ({ isActive, toggleActive }) => {
           sx={{
             cursor: 'pointer',
             borderBottom: {
-              lg: '',
+              lg: isActive === 'Comments' ? '2px solid #4B4B4B' : null,
               md: isActive === 'Comments' ? '2px solid #4B4B4B' : null,
-              xs: '',
+              xs: isActive === 'Comments' ? '2px solid #4B4B4B' : null,
             },
             backgroundColor: {
-              lg: '',
+              lg: isActive === 'Comments' ? '#e0e0e0' : null,
               md: isActive === 'Comments' ? '#e0e0e0' : null,
-              xs: '',
+              xs: isActive === 'Comments' ? '#e0e0e0' : null,
             },
             color: {
-              lg: '',
+              lg: isActive === 'Comments' ? '#4B4B4B' : '#c9c9c9',
               md: isActive === 'Comments' ? '#4B4B4B' : '#c9c9c9',
-              xs: '',
+              xs: isActive === 'Comments' ? '#4B4B4B' : '#c9c9c9',
             }
           }}
           onClick={toggleActive}
@@ -76,19 +76,19 @@ const Header = ({ isActive, toggleActive }) => {
           sx={{
             cursor: 'pointer',
             borderBottom: {
-              lg: '',
+              lg: isActive === 'Reviews' ? '2px solid #4B4B4B' : null,
               md: isActive === 'Reviews' ? '2px solid #4B4B4B' : null,
-              xs: '',
+              xs: isActive === 'Reviews' ? '2px solid #4B4B4B' : null,
             },
             backgroundColor: {
-              lg: '',
+              lg: isActive === 'Reviews' ? '#e0e0e0' : null,
               md: isActive === 'Reviews' ? '#e0e0e0' : null,
-              xs: '',
+              xs: isActive === 'Reviews' ? '#e0e0e0' : null,
             },
             color: {
-              lg: '',
+              lg: isActive === 'Reviews' ? '#4B4B4B' : '#c9c9c9',
               md: isActive === 'Reviews' ? '#4B4B4B' : '#c9c9c9',
-              xs: '',
+              xs: isActive === 'Reviews' ? '#4B4B4B' : '#c9c9c9',
             }
           }}
           onClick={toggleActive}
