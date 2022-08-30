@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import ItemPricing from './ItemPricing'
 import ItemQuantity from './ItemQuantity'
 import Item from './Item'
