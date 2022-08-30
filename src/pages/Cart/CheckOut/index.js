@@ -14,7 +14,18 @@ const CheckOut = ({ cart }) => {
           lg: '',
           md: 'flex',
           xs: '',
-        }
+        },
+        position: {
+          lg: '',
+          md: 'sticky',
+          xs: '',
+        },
+        bottom: {
+          lg: '0',
+          md: '0',
+          xs: '0',
+        },
+
       }}
     >
 

@@ -38,7 +38,7 @@ const CheckOutNow = () => {
           sx={{
             fontSize: {
               lg: '',
-              md: '23px',
+              md: '22px',
               xs: '',
             }
           }}

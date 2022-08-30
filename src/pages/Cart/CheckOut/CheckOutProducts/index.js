@@ -119,19 +119,29 @@ const CheckOutProducts = () => {
                       </Typography>
                     </Box>
                     <Box>
-                      <Typography
-                        fontWeight='bold'
-                        color='#4B4B4B'
+                      <Box
                         sx={{
-                          fontSize: {
+                          marginTop: {
                             lg: '',
-                            md: '12px',
+                            md: '5px',
                             xs: '',
                           }
                         }}
                       >
-                        x{product.quantity}
-                      </Typography>
+                        <Typography
+                          fontWeight='bold'
+                          color='#4B4B4B'
+                          sx={{
+                            fontSize: {
+                              lg: '',
+                              md: '12px',
+                              xs: '',
+                            }
+                          }}
+                        >
+                          x{product.quantity}
+                        </Typography>
+                      </Box>
                     </Box>
                   </Box>
                 </ListItem>
