@@ -13,6 +13,8 @@ const Nav = () => {
     })
     return total
   }
+
+  console.log('Nav Log', cart)
   return (
     <nav>
       <a

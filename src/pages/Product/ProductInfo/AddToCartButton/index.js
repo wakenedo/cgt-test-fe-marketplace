@@ -8,14 +8,15 @@ import buyCart from '../../../../assets/Products/Cart.png'
 
 const AddToCartButton = ({ products, id }) => {
   const dispatch = useDispatch()
+  const product = products[id]
 
-
+  console.log('AddCartButton log', products, id, product)
   return (
     <Button
       variant='contained'
       onClick={() =>
         dispatch(addToCart({
-          products, id
+          product, id
         }))
       }
       sx={{
