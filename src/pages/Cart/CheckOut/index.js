@@ -4,6 +4,7 @@ import CheckOutNow from './CheckOutNow'
 import CheckOutProducts from './CheckOutProducts'
 
 const CheckOut = ({ cart }) => {
+  console.log('CheckOut Log', cart)
   return (
     <Box
       backgroundColor='#1CFBD3'
@@ -13,12 +14,23 @@ const CheckOut = ({ cart }) => {
           lg: '',
           md: 'flex',
           xs: '',
-        }
+        },
+        position: {
+          lg: '',
+          md: 'sticky',
+          xs: '',
+        },
+        bottom: {
+          lg: '0',
+          md: '0',
+          xs: '0',
+        },
+
       }}
     >
 
       <CheckOutProducts />
-      <CheckOutNow />
+      <CheckOutNow cart={cart} />
     </Box>
   )
 }

@@ -16,7 +16,8 @@ const Cart = () => {
       <Greeting />
 
       <Box
-        border='1px solid #4B4B4B'
+        border='1px solid #FFADFC'
+        backgroundColor='#FFADFC'
       >
         {cart?.map((product, id) => (
           <CartItem product={product} id={id} />
