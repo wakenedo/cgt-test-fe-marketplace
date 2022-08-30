@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 
 import CartItem from './CartItem'
 
@@ -21,6 +21,9 @@ const Cart = () => {
         <CartItem product={product} id={id} />
       ))}
 
+      <Button>
+        Check Out Now
+      </Button>
     </Box>
   )
 }

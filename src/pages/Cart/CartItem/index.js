@@ -1,5 +1,8 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
+import ItemPricing from './ItemPricing'
+import ItemQuantity from './ItemQuantity'
+import Item from './Item'
 
 
 const CartItem = ({ product, id }) => {
@@ -15,45 +18,9 @@ const CartItem = ({ product, id }) => {
       display='flex'
       alignItems='center'
     >
-      <Box>
-        <Box
-          sx={{
-            marginBottom: {
-              lg: '',
-              md: '10px',
-              xs: '',
-            }
-          }}
-        >
-          <Typography
-            color='#4B4B4B'
-            fontWeight='bold'
-            sx={{
-              fontSize: {
-                lg: '',
-                md: '14px',
-                xs: '',
-              }
-            }}
-          >
-            {product.product.title.toUpperCase()}
-          </Typography>
-        </Box>
-        <img src={product.product.image} alt=''
-          style={{
-            width: '200px',
-            maxHeight: '100px'
-          }}
-        />
-      </Box>
-      <Box>
-        <Typography>
-          {product.product.price},00 USD
-        </Typography>
-      </Box>
-      <Typography>
-        {product.quantity}
-      </Typography>
+      <Item product={product} />
+      <ItemPricing product={product} />
+      <ItemQuantity product={product} />
     </Box >
   )
 }
