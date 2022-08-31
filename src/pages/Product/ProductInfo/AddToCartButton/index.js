@@ -10,13 +10,15 @@ const AddToCartButton = ({ products, id }) => {
   const dispatch = useDispatch()
   const product = products[id]
 
-  console.log('AddCartButton log', products, id, product)
+
+
+  console.log('AddCartButton log', products[id], id, product)
   return (
     <Button
       variant='contained'
       onClick={() =>
         dispatch(addToCart({
-          product, id
+          product
         }))
       }
       sx={{

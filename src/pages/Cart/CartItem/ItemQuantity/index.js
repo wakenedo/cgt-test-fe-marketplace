@@ -1,7 +1,12 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
+import { useDispatch } from 'react-redux'
+import { addToCart, removeFromCart, removeAllItems } from '../../../../redux/cartSlice'
 
 const ItemQuantity = ({ product }) => {
+  const dispatch = useDispatch()
+
+  console.log(product)
   return (
     <Box
       display='flex'
@@ -45,6 +50,7 @@ const ItemQuantity = ({ product }) => {
         }}
       >
         <Button
+          onClick={() => dispatch(addToCart(product))}
           variant='contained'
           sx={{
             backgroundColor: '#1CFBD3',
@@ -82,6 +88,7 @@ const ItemQuantity = ({ product }) => {
           </Typography>
         </Box>
         <Button
+          onClick={() => dispatch(removeFromCart(product.id))}
           variant='contained'
           sx={{
             backgroundColor: '#1CFBD3',
