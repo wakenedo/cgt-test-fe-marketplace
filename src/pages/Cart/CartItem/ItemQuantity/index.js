@@ -17,16 +17,19 @@ const ItemQuantity = ({ product }) => {
           marginRight: {
             lg: '',
             md: '10px',
-            xs: '',
+            xs: '55px',
+          },
+          marginLeft: {
+            xs: '15px'
           }
         }}
       >
         <Typography
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '10px',
-              xs: '',
+              xs: '10px',
             }
           }}
         >
@@ -38,14 +41,17 @@ const ItemQuantity = ({ product }) => {
         alignItems='center'
         sx={{
           display: {
-            lg: '',
+            lg: 'flex',
             md: 'flex',
-            xs: '',
+            xs: 'flex',
           },
           flexDirection: {
-            lg: '',
+            lg: 'column',
             md: 'column',
-            xs: '',
+            xs: 'row',
+          },
+          marginLeft: {
+            xs: '10px'
           }
         }}
       >
@@ -68,9 +74,9 @@ const ItemQuantity = ({ product }) => {
           margin='15px'
           sx={{
             width: {
-              lg: '',
+              lg: '25px',
               md: '25px',
-              xs: '',
+              xs: '15px',
             }
           }}
         >
@@ -78,7 +84,7 @@ const ItemQuantity = ({ product }) => {
             textAlign='center'
             sx={{
               fontSize: {
-                lg: '',
+                lg: '15px',
                 md: '15px',
                 xs: '',
               }

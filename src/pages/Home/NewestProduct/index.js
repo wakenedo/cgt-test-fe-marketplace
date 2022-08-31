@@ -32,7 +32,8 @@ const NewestProduct = ({ newestProduct }) => {
             src={newestProduct?.image}
             alt=''
             style={{
-              width: '410px',
+              minWidth: '340px',
+              width: '100%',
               height: '240px'
             }}
           />

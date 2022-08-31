@@ -34,7 +34,8 @@ const UserInterest = ({ userInterest }) => {
             src={userInterest?.image}
             alt=''
             style={{
-              width: '410px',
+              maxWidth: '340px',
+              width: '100%',
               height: '240px'
             }}
           />

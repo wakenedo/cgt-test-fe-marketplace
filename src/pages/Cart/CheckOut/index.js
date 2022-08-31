@@ -11,14 +11,19 @@ const CheckOut = ({ cart }) => {
       justifyContent='center'
       sx={{
         display: {
-          lg: '',
+          lg: 'flex',
           md: 'flex',
-          xs: '',
+          xs: 'flex',
+        },
+        flexDirection: {
+          lg: 'row',
+          md: 'row',
+          xs: 'column',
         },
         position: {
-          lg: '',
+          lg: 'sticky',
           md: 'sticky',
-          xs: '',
+          xs: 'sticky',
         },
         bottom: {
           lg: '0',

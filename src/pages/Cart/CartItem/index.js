@@ -21,6 +21,11 @@ const CartItem = ({ product, id }) => {
       justifyContent='space-between'
       display='flex'
       alignItems='center'
+      sx={{
+        flexDirection: {
+          xs: 'column'
+        }
+      }}
     >
       <Item product={product} />
       <ItemPricing product={product} />

@@ -18,7 +18,7 @@ const RemoveItems = ({ product }) => {
         marginRight: {
           lg: '',
           md: '45px',
-          xs: '',
+          xs: '38px',
         },
         marginBottom: {
           lg: '',
@@ -32,7 +32,7 @@ const RemoveItems = ({ product }) => {
           marginRight: {
             lg: '',
             md: '5px',
-            xs: '',
+            xs: '5px',
           }
         }}
       >
@@ -40,9 +40,9 @@ const RemoveItems = ({ product }) => {
           color='#E53535'
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '10px',
-              xs: '',
+              xs: '10px',
             }
           }}
         >
