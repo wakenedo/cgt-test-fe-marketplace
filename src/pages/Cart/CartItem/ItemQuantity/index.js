@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
 import { useDispatch } from 'react-redux'
-import { addToCart, removeFromCart, removeAllItems } from '../../../../redux/cartSlice'
+import { addToCart, removeFromCart } from '../../../../redux/cartSlice'
 
 const ItemQuantity = ({ product }) => {
   const dispatch = useDispatch()
