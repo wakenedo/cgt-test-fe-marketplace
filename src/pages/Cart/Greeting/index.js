@@ -2,7 +2,6 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 
 const Greeting = ({ cart }) => {
-  console.log('Greeting log', cart)
 
   const getTotalQuantity = () => {
     let total = 0

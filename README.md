@@ -1,3 +1,51 @@
+# 90s Shop 🥳
+
+90s Shop is a modern application that simulates a marketplace, with a 90s theme. 
+
+* Responsiveness 
+* Scalable File & Folder Structure
+* Clean Code
+
+
+# Libs 📘
+
+* Redux , Redux-persist
+* Axios
+* Material UI
+* Toastify
+
+# Redux & Redux-persist
+  https://redux.js.org/
+
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0",
+
+ For this project to deal with states we implemented a Redux structure, this way we can track the Cart states without the risk of state pollution.
+ The redux structure used was the suggested one by Redux docs.
+# Mocko API
+  https://app.mocko.dev/
+
+For the products, I've decided to mock an api, to call and simulate a more realistic development environment. I've used the service of mocko to create a simple endpoint for the products that were in the project.
+# IMGBB
+  https://imgbb.com/
+Used imgbb to host the images from the products to call and render them from the api request         
+# Axios
+  https://axios-http.com/ptbr/docs/intro
+    
+    "axios": "^0.27.2",
+Since we're using and api, I decided to use axios to fetch the data from the endpoint
+
+# Material UI
+
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.2",
+Material UI was used for its fast development process and implementation, with its in-built components that we have access to.
+# Toastify
+    "react-toastify": "^9.0.8",
+
+React-Toastify to improve user experience related to their actions on the app.
+
 # Marketplace MVP
 
 The goal of this task is to test your ability to test, refactor and implement new functionality on a given system. Note

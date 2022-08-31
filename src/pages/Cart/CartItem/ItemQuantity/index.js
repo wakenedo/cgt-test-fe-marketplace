@@ -6,7 +6,6 @@ import { addToCart, removeFromCart } from '../../../../redux/cartSlice'
 const ItemQuantity = ({ product }) => {
   const dispatch = useDispatch()
 
-  console.log(product)
   return (
     <Box
       display='flex'

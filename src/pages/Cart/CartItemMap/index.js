@@ -6,7 +6,6 @@ import noItemInCart from '../../../assets/Cart/NoItemInCart.png'
 import CartItem from '../CartItem'
 
 const CartItemMap = ({ cart }) => {
-  console.log('CartItemMap Log', cart)
 
   if (cart.length === 0) {
     return (

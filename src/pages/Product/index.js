@@ -20,7 +20,6 @@ const Product = () => {
     })
   }, [])
 
-  console.log(id, products)
   return (
     <Box>
       <Box

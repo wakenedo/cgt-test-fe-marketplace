@@ -11,7 +11,7 @@ import RemoveItems from './RemoveItems'
 
 const CartItem = ({ product, id }) => {
 
-  console.log('Cart Item Log', product.product.title, id)
+
   return (
     <Box
       borderBottom='1px solid #4B4B4B'
@@ -23,6 +23,8 @@ const CartItem = ({ product, id }) => {
       alignItems='center'
       sx={{
         flexDirection: {
+          lg: 'row',
+          md: 'row',
           xs: 'column'
         }
       }}
