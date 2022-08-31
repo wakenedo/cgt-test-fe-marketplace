@@ -6,7 +6,9 @@ import { Box, List, ListItem, Table, TableContainer, Typography } from '@mui/mat
 const CheckOutProducts = () => {
   const cart = useSelector((state) => state.cart)
 
-  console.log('CheckOutProducts Log', cart)
+
+
+  console.log('CheckOutProducts Log', cart,)
 
   if (cart.length === 0) {
     return
@@ -41,6 +43,10 @@ const CheckOutProducts = () => {
           >
             <List>
               {cart?.map((product, id, quantity) => {
+                const getTotal = () => {
+                  const result = product.quantity * product.product.price
+                  return result
+                }
                 console.log(product, id, quantity)
                 return (
                   <ListItem
@@ -86,6 +92,45 @@ const CheckOutProducts = () => {
                       >
                         <Box
                           sx={{
+                            width: {
+                              lg: '',
+                              md: '45px',
+                              xs: '',
+                            }
+                          }}
+                        >
+                          <Box
+                            sx={{
+                              marginTop: {
+                                lg: '',
+                                md: '5px',
+                                xs: '',
+                              },
+                              marginRight: {
+                                lg: '',
+                                md: '40px',
+                                xs: '',
+                              }
+                            }}
+                          >
+                            <Typography
+                              fontWeight='bold'
+                              color='#4B4B4B'
+                              textAlign='center'
+                              sx={{
+                                fontSize: {
+                                  lg: '',
+                                  md: '12px',
+                                  xs: '',
+                                }
+                              }}
+                            >
+                              x{product.quantity}
+                            </Typography>
+                          </Box>
+                        </Box>
+                        <Box
+                          sx={{
                             marginTop: {
                               lg: '',
                               md: '5px',
@@ -122,34 +167,10 @@ const CheckOutProducts = () => {
                             }
                           }}
                         >
-                          {product?.product.price},00 USD
+                          {getTotal()},00 USD
                         </Typography>
                       </Box>
-                      <Box>
-                        <Box
-                          sx={{
-                            marginTop: {
-                              lg: '',
-                              md: '5px',
-                              xs: '',
-                            }
-                          }}
-                        >
-                          <Typography
-                            fontWeight='bold'
-                            color='#4B4B4B'
-                            sx={{
-                              fontSize: {
-                                lg: '',
-                                md: '12px',
-                                xs: '',
-                              }
-                            }}
-                          >
-                            x{product.quantity}
-                          </Typography>
-                        </Box>
-                      </Box>
+
                     </Box>
                   </ListItem>
 

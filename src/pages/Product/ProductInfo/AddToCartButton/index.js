@@ -18,7 +18,7 @@ const AddToCartButton = ({ products, id }) => {
       variant='contained'
       onClick={() =>
         dispatch(addToCart({
-          product
+          product, id
         }))
       }
       sx={{
