@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
 import { useDispatch } from 'react-redux'
-import { incrementQuantity, decrementQuantity, removeItem } from '../../../../redux/cartSlice'
+import { addToCart, removeFromCart, removeAllItems } from '../../../../redux/cartSlice'
 
 const ItemQuantity = ({ product }) => {
   const dispatch = useDispatch()
@@ -50,7 +50,7 @@ const ItemQuantity = ({ product }) => {
         }}
       >
         <Button
-          onClick={() => dispatch(incrementQuantity(product))}
+          onClick={() => dispatch(addToCart(product))}
           variant='contained'
           sx={{
             backgroundColor: '#1CFBD3',
@@ -88,7 +88,7 @@ const ItemQuantity = ({ product }) => {
           </Typography>
         </Box>
         <Button
-          onClick={() => dispatch(decrementQuantity(product.id))}
+          onClick={() => dispatch(removeFromCart(product.id))}
           variant='contained'
           sx={{
             backgroundColor: '#1CFBD3',

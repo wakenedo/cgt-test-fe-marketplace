@@ -8,26 +8,25 @@ import NewestProduct from './NewestProduct'
 import UserInterest from './UserInterest'
 import IntroImage from './IntroImage'
 
-import { api } from '../../api'
+
+import { fetchProducts } from '../../api/products'
 
 const Home = () => {
   const [newestProduct, setNewestProduct] = useState()
   const [userInterest, setUserInterest] = useState()
 
+  const getProducts = async () => {
+    const data = await fetchProducts()
+    setNewestProduct(data[0])
+    setUserInterest(data[1])
+    console.log('home', data)
+
+  }
+
   useEffect(() => {
-    api.get().then((response) => {
-      const dataNewest = response.data[0]
-      setNewestProduct(dataNewest)
-      console.log(dataNewest)
-    })
-  }, [])
-  useEffect(() => {
-    api.get().then((response) => {
-      const dataUserInterest = response.data[1]
-      setUserInterest(dataUserInterest)
-      console.log(dataUserInterest)
-    })
-  }, [])
+    getProducts()
+  }
+    , [])
 
 
   return (

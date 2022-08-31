@@ -2,9 +2,9 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Box } from '@mui/material'
 
-import CartItem from './CartItem'
 import Greeting from './Greeting'
 import CheckOut from './CheckOut'
+import CartItemMap from './CartItemMap'
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart)
@@ -13,16 +13,8 @@ const Cart = () => {
 
   return (
     <Box>
-      <Greeting />
-
-      <Box
-        border='1px solid #FFADFC'
-        backgroundColor='#FFADFC'
-      >
-        {cart?.map((product, id) => (
-          <CartItem product={product} id={id} />
-        ))}
-      </Box>
+      <Greeting cart={cart} />
+      <CartItemMap cart={cart} />
 
       <CheckOut cart={cart} />
     </Box>

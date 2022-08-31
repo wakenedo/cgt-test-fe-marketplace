@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import HeaderCart from '../../../assets/Header/HeaderCart.png'
 
 const Nav = () => {
-  const cart = useSelector((state) => state.cart)
+  const { cart } = useSelector((state) => state)
 
   const getTotalQuantity = () => {
     let total = 0
