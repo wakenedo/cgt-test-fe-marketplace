@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box } from '@mui/material'
 
-import _3DModelFormat from './3DModelFormat'
-import _3DModelDetail from './3DModelDetail'
+import ModelFormat from './3DModelFormat'
+import ModelDetail from './3DModelDetail'
 
 const Product3DModal = () => {
   return (
@@ -25,8 +25,8 @@ const Product3DModal = () => {
         }}
       >
 
-        <_3DModelFormat />
-        <_3DModelDetail />
+        <ModelFormat />
+        <ModelDetail />
 
       </Box>
     </Box>

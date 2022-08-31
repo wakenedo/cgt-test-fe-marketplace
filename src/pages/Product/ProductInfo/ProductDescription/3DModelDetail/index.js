@@ -4,7 +4,7 @@ import crossNull from '../../../../../assets/Products/Exchange/crossnull.png'
 import rightGreen from '../../../../../assets/Products/Exchange/rightgreen.png'
 import approvedRight from '../../../../../assets/Products/Exchange/approvedright.png'
 
-const _3DModelDetail = () => {
+const ModelDetail = () => {
   return (
     <Box
       borderRadius='5px'
@@ -504,4 +504,4 @@ const _3DModelDetail = () => {
   )
 }
 
-export default _3DModelDetail
+export default ModelDetail

@@ -57,6 +57,7 @@ const NewestProduct = ({ newestProduct }) => {
           <Box
             marginBottom='10px'
             alignContent='space-between'
+            display='flex'
           >
 
             <Typography
@@ -73,23 +74,23 @@ const NewestProduct = ({ newestProduct }) => {
               }}
             >
               {newestProduct?.title}
-              <a href={`/Product/${newestProduct?.id}`}>
-                <Box
-                  sx={{
-                    marginLeft: {
-                      lg: '480px',
-                      md: '180px',
-                      xs: '140px',
-                    }
-                  }}
-                >
-                  <Typography>
-                    See More
-
-                  </Typography>
-                </Box>
-              </a>
             </Typography>
+            <a href={`/Product/${newestProduct?.id}`}>
+              <Box
+                sx={{
+                  marginLeft: {
+                    lg: '480px',
+                    md: '180px',
+                    xs: '140px',
+                  }
+                }}
+              >
+                <Typography>
+                  See More
+
+                </Typography>
+              </Box>
+            </a>
 
           </Box>
           <Typography>
