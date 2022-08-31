@@ -21,13 +21,20 @@ const cartSlice = createSlice({
       const item = state.cart.find((item) => item.id === action.payload);
       if (item.quantity === 1) {
         state.cart = state.cart.filter((item) => item.id !== action.payload);
-      } else {
-        item.quantity--;
       }
-      state.totalCartPrice = state.totalCartPrice - item.product.price
+      if (state.totalCartPrice <= 0) {
+        state.totalCartPrice = 0
+      }
+      else {
+        item.quantity--;
+        state.totalCartPrice = state.totalCartPrice - item.product.price
+      }
     },
     removeAllItems: (state, action) => {
-      state.cart = state.cart.filter((item) => item.id === action.payload);
+      state.cart = state.cart.filter((item) => item.id !== action.payload.id);
+      const reducingItemsPrice = action.payload.product.price * action.payload.quantity
+      state.totalCartPrice = state.totalCartPrice - reducingItemsPrice
+      console.log('reducer removeAllItems Log', reducingItemsPrice, action.payload.product.price, action.payload.quantity)
     },
   },
 });

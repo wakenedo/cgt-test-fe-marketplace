@@ -20,14 +20,14 @@ const CheckOutProducts = () => {
         borderRadius='2px'
         sx={{
           width: {
-            lg: '',
+            lg: '600px',
             md: '450px',
-            xs: '',
+            xs: '340px',
           },
           margin: {
             lg: '',
             md: '10px',
-            xs: '',
+            xs: '10px',
 
           }
         }}

@@ -20,9 +20,9 @@ const CartItemMap = ({ cart }) => {
             xs: '',
           },
           width: {
-            lg: '',
+            lg: '100%',
             md: '100%',
-            xs: '',
+            xs: '100%',
           },
         }}
       >
@@ -31,19 +31,19 @@ const CartItemMap = ({ cart }) => {
           borderRadius='15px'
           sx={{
             width: {
-              lg: '',
+              lg: '430px',
               md: '420px',
-              xs: '',
+              xs: '150px',
             },
             height: {
               lg: '',
               md: '350px',
-              xs: '',
+              xs: '150px',
             },
             margin: {
-              lg: '',
+              lg: '100px 35%',
               md: '100px 250px',
-              xs: '',
+              xs: '100px',
             },
             padding: {
               lg: '',
@@ -52,7 +52,21 @@ const CartItemMap = ({ cart }) => {
             }
           }}
         >
-          <img src={noItemInCart} alt='no-item-in-cart' />
+          <Box
+            sx={{
+              margin: {
+                lg: '',
+                md: '100px 140px',
+                xs: '10px auto',
+              }
+            }}
+          >
+            <img src={noItemInCart} alt='no-item-in-cart'
+              style={{
+                width: '150px'
+              }}
+            />
+          </Box>
         </Box>
       </Box>
     )
@@ -69,9 +83,9 @@ const CartItemMap = ({ cart }) => {
             xs: '',
           },
           width: {
-            lg: '',
+            lg: '100%',
             md: '100%',
-            xs: '',
+            xs: '100%',
           },
         }}
       >

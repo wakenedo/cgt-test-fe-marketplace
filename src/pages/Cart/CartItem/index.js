@@ -1,8 +1,12 @@
 import React from 'react'
 import { Box } from '@mui/material'
+
+
+//Inner components
 import ItemPricing from './ItemPricing'
 import ItemQuantity from './ItemQuantity'
 import Item from './Item'
+import RemoveItems from './RemoveItems'
 
 
 const CartItem = ({ product, id }) => {
@@ -17,10 +21,16 @@ const CartItem = ({ product, id }) => {
       justifyContent='space-between'
       display='flex'
       alignItems='center'
+      sx={{
+        flexDirection: {
+          xs: 'column'
+        }
+      }}
     >
       <Item product={product} />
       <ItemPricing product={product} />
       <ItemQuantity product={product} />
+      <RemoveItems product={product} />
     </Box >
   )
 }

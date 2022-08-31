@@ -9,7 +9,16 @@ const ItemPricing = ({ product }) => {
   }
 
   return (
-    <Box>
+    <Box
+      sx={{
+        display: {
+          xs: 'flex'
+        },
+        marginBottom: {
+          xs: '10px'
+        }
+      }}
+    >
       <Box
         marginBottom='10px'
       >
@@ -18,23 +27,23 @@ const ItemPricing = ({ product }) => {
           fontWeight='bold'
           sx={{
             fontSize: {
-              lg: '',
+              lg: '12px',
               md: '10px',
-              xs: '',
+              xs: '8px',
             },
 
           }}
         >
-          EACH ITEM:
+          EACH ITEM :
         </Typography>
         <Typography
           color='#4B4B4B'
           fontWeight='bold'
           sx={{
             fontSize: {
-              lg: '',
+              lg: '16px',
               md: '12px',
-              xs: '',
+              xs: '12px',
 
             }
           }}
@@ -44,41 +53,50 @@ const ItemPricing = ({ product }) => {
       </Box>
       <Box
         sx={{
-          marginRight: {
-            lg: '',
-            md: '5px',
-            xs: '',
+          marginLeft: {
+            xs: '90px'
           }
         }}
       >
-        <Typography
-          color='#4B4B4B'
-          fontWeight='bold'
+        <Box
           sx={{
-            fontSize: {
+            marginRight: {
               lg: '',
-              md: '13px',
+              md: '5px',
               xs: '',
             },
 
           }}
         >
-          TOTAL :
+          <Typography
+            color='#4B4B4B'
+            fontWeight='bold'
+            sx={{
+              fontSize: {
+                lg: '16px',
+                md: '13px',
+                xs: '12px',
+              },
+
+            }}
+          >
+            TOTAL :
+          </Typography>
+        </Box>
+        <Typography
+          color='#4B4B4B'
+          fontWeight='bold'
+          sx={{
+            fontSize: {
+              lg: '24px',
+              md: '22px',
+              xs: '16px',
+            }
+          }}
+        >
+          {getTotal()},00 USD
         </Typography>
       </Box>
-      <Typography
-        color='#4B4B4B'
-        fontWeight='bold'
-        sx={{
-          fontSize: {
-            lg: '',
-            md: '22px',
-            xs: '',
-          }
-        }}
-      >
-        {getTotal()},00 USD
-      </Typography>
     </Box>
   )
 }

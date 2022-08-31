@@ -24,7 +24,16 @@ const CheckOutNow = ({ cart }) => {
   } else {
     return (
       <Box
-        padding='20px'
+        sx={{
+          padding: {
+            lg: '20px',
+            md: '20px',
+            xs: '10px',
+          },
+          display: {
+            xs: 'flex'
+          }
+        }}
       >
         <Box
           display='flex'
@@ -36,6 +45,9 @@ const CheckOutNow = ({ cart }) => {
                 lg: '',
                 md: '8px',
                 xs: '',
+              },
+              marginRight: {
+                xs: '5px'
               }
             }}
           >
@@ -43,34 +55,56 @@ const CheckOutNow = ({ cart }) => {
               color='#4B4B4B'
               sx={{
                 fontSize: {
-                  lg: '',
+                  lg: '14px',
                   md: '12px',
-                  xs: '',
+                  xs: '10px',
                 }
               }}
             >
               TOTAL:
             </Typography>
           </Box>
-          <Typography
-            fontWeight='bold'
-            color='#4B4B4B'
+          <Box
             sx={{
-              fontSize: {
-                lg: '',
-                md: '22px',
-                xs: '',
+              width: {
+                xs: '155px'
               }
             }}
           >
-            {totalCartPrice},00 USD
-          </Typography>
+            <Typography
+              fontWeight='bold'
+              color='#4B4B4B'
+              sx={{
+                fontSize: {
+                  lg: '23.5px',
+                  md: '22px',
+                  xs: '18px',
+                }
+              }}
+            >
+              {totalCartPrice},00 USD
+            </Typography>
+
+          </Box>
         </Box>
-        <Button
-          variant='contained'
+        <Box
+          sx={{
+            marginLeft: {
+              xs: '38.5px'
+            }
+          }}
         >
-          Check Out Now !
-        </Button>
+          <Button
+            variant='contained'
+            sx={{
+              fontSize: {
+                xs: '12px',
+              }
+            }}
+          >
+            Check Out Now !
+          </Button>
+        </Box>
       </Box>
     )
   }

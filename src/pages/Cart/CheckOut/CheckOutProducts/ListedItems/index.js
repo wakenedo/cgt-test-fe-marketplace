@@ -13,14 +13,14 @@ const ListedItems = ({ product, getTotal }) => {
         backgroundColor='#1CFBD3'
         sx={{
           width: {
-            lg: '',
+            lg: '45%',
             md: '45%',
-            xs: '',
+            xs: '45%',
           },
           padding: {
-            lg: '',
+            lg: '8px',
             md: '5px',
-            xs: '',
+            xs: '2px',
           }
         }}
       >
@@ -28,9 +28,9 @@ const ListedItems = ({ product, getTotal }) => {
           fontWeight='bold'
           sx={{
             fontSize: {
-              lg: '',
+              lg: '15px',
               md: '13px',
-              xs: '',
+              xs: '12px',
             }
           }}
         >
@@ -44,9 +44,9 @@ const ListedItems = ({ product, getTotal }) => {
         <Box
           sx={{
             width: {
-              lg: '',
+              lg: '55px',
               md: '45px',
-              xs: '',
+              xs: '35px',
             }
           }}
         >
@@ -60,7 +60,7 @@ const ListedItems = ({ product, getTotal }) => {
               marginRight: {
                 lg: '',
                 md: '40px',
-                xs: '',
+                xs: '80px',
               }
             }}
           >
@@ -72,7 +72,7 @@ const ListedItems = ({ product, getTotal }) => {
                 fontSize: {
                   lg: '',
                   md: '12px',
-                  xs: '',
+                  xs: '10px',
                 }
               }}
             >
@@ -85,12 +85,12 @@ const ListedItems = ({ product, getTotal }) => {
             marginTop: {
               lg: '',
               md: '5px',
-              xs: '',
+              xs: '5px',
             },
             marginRight: {
               lg: '',
               md: '5px',
-              xs: '',
+              xs: '5px',
             }
           }}
         >
@@ -98,9 +98,9 @@ const ListedItems = ({ product, getTotal }) => {
             color='#4B4B4B'
             sx={{
               fontSize: {
-                lg: '',
+                lg: '10px',
                 md: '8px',
-                xs: '',
+                xs: '9px',
               }
             }}
           >
@@ -112,7 +112,7 @@ const ListedItems = ({ product, getTotal }) => {
           color='#4B4B4B'
           sx={{
             fontSize: {
-              lg: '',
+              lg: '15px',
               md: '12px',
               xs: '',
             }

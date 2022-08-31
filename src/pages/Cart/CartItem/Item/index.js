@@ -8,10 +8,17 @@ const Item = ({ product }) => {
     <Box
       sx={{
         padding: {
-          lg: '',
+          lg: '20px',
           md: '20px',
-          xs: '',
+          xs: '10px',
+        },
+        marginBottom: {
+          xs: '10px',
+        },
+        marginTop: {
+          xs: '10px'
         }
+
       }}
     >
       <Box
@@ -19,12 +26,17 @@ const Item = ({ product }) => {
           marginBottom: {
             lg: '',
             md: '10px',
-            xs: '',
+            xs: '5px',
           },
           maxWidth: {
-            lg: '',
+            lg: '400px',
             md: '300px',
-            xs: ''
+            xs: '400px'
+          },
+          width: {
+            lg: '250px',
+            md: '250px',
+            xs: '250px',
           }
         }}
       >
@@ -36,14 +48,14 @@ const Item = ({ product }) => {
           fontWeight='bold'
           sx={{
             fontSize: {
-              lg: '',
+              lg: '22px',
               md: '18px',
-              xs: '',
+              xs: '16px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '5px',
             }
           }}
         >
@@ -81,12 +93,12 @@ const Item = ({ product }) => {
             marginLeft: {
               lg: '',
               md: '5px',
-              xs: '',
+              xs: '5px',
             },
             marginTop: {
               lg: '',
               md: '2px',
-              xs: '',
+              xs: '1px',
             }
           }}
         >
