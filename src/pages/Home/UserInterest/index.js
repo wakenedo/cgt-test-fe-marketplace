@@ -58,6 +58,8 @@ const UserInterest = ({ userInterest }) => {
         >
           <Box
             marginBottom='10px'
+            alignContent='space-between'
+            display='flex'
           >
 
             <Typography
@@ -74,22 +76,22 @@ const UserInterest = ({ userInterest }) => {
               }}
             >
               {userInterest?.title}
-              <a href={`/Product/${userInterest?.id}`}>
-                <Box
-                  sx={{
-                    marginLeft: {
-                      lg: '345px',
-                      md: '65px',
-                      xs: '45px',
-                    }
-                  }}
-                >
-                  <Typography >
-                    See More
-                  </Typography>
-                </Box>
-              </a>
             </Typography>
+            <a href={`/Product/${userInterest?.id}`}>
+              <Box
+                sx={{
+                  marginLeft: {
+                    lg: '345px',
+                    md: '65px',
+                    xs: '45px',
+                  }
+                }}
+              >
+                <Typography >
+                  See More
+                </Typography>
+              </Box>
+            </a>
 
           </Box>
           <Typography>

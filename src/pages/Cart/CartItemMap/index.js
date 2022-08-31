@@ -76,7 +76,7 @@ const CartItemMap = ({ cart }) => {
         }}
       >
         {cart?.map((product, id) => (
-          <CartItem key={product.id} product={product} id={id} />
+          <CartItem key={id} product={product} id={id} />
         ))}
       </Box>
     )

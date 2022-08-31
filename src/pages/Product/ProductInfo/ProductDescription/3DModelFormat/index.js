@@ -3,7 +3,7 @@ import { Box, Typography, Table, TableContainer } from '@mui/material'
 import Native from './Native'
 import Exchange from './Exchange'
 
-const _3DModelFormat = () => {
+const ModelFormat = () => {
   return (
     <Table
       sx={{
@@ -96,4 +96,4 @@ const _3DModelFormat = () => {
   )
 }
 
-export default _3DModelFormat
+export default ModelFormat
