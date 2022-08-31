@@ -2,6 +2,12 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 
 const ItemPricing = ({ product }) => {
+
+  const getTotal = () => {
+    const result = product.quantity * product.product.price
+    return result
+  }
+
   return (
     <Box>
       <Box
@@ -71,7 +77,7 @@ const ItemPricing = ({ product }) => {
           }
         }}
       >
-        {product.product.price},00 USD
+        {getTotal()},00 USD
       </Typography>
     </Box>
   )
