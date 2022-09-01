@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Routes, Route } from "react-router-dom";
 import './styles/app.css'
 
@@ -9,12 +9,14 @@ import Product from './pages/Product';
 import Header from './components/Header';
 import Shop from './pages/Shop';
 
-
-
+import { DarkModeContext } from './context';
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext)
+
+  console.log('App', darkMode)
   return (
-    <div className='App'>
+    <div className={darkMode ? `App App-dark` : `App App-light`}>
       <Header />
       <Routes>
         <Route path='/Cart' element={<Cart />} />

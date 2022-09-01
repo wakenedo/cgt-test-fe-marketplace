@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import checkoutNewest from '../../../assets/Home/checkoutNewest.png'
+import { DarkModeContext } from '../../../context'
 
 
 const NewestProduct = ({ newestProduct }) => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
-      backgroundColor='#1CFBD3'
       sx={{
+        backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
         width: {
           lg: '750px',
           md: '450px',

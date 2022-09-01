@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography } from '@mui/material'
+import { DarkModeContext } from '../../../../../context'
 
 const ListedItems = ({ product, getTotal }) => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
       product={product}
@@ -10,8 +12,8 @@ const ListedItems = ({ product, getTotal }) => {
       justifyContent='space-between'
     >
       <Box
-        backgroundColor='#1CFBD3'
         sx={{
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
           width: {
             lg: '45%',
             md: '45%',

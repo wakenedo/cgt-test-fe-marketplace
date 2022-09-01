@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography, Button } from '@mui/material'
 import { useDispatch } from 'react-redux'
 import { addToCart, removeFromCart } from '../../../../redux/cartSlice'
+import { DarkModeContext } from '../../../../context'
 
 const ItemQuantity = ({ product }) => {
+  const { darkMode } = useContext(DarkModeContext)
   const dispatch = useDispatch()
 
   return (
@@ -58,7 +60,7 @@ const ItemQuantity = ({ product }) => {
           onClick={() => dispatch(addToCart(product))}
           variant='contained'
           sx={{
-            backgroundColor: '#1CFBD3',
+            backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
             color: '#4B4B4B',
             minWidth: {
               lg: '',
@@ -96,7 +98,7 @@ const ItemQuantity = ({ product }) => {
           onClick={() => dispatch(removeFromCart(product.id))}
           variant='contained'
           sx={{
-            backgroundColor: '#1CFBD3',
+            backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
             color: '#4B4B4B',
             minWidth: {
               lg: '',

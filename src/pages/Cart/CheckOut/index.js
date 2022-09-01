@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box } from '@mui/material'
 import CheckOutNow from './CheckOutNow'
 import CheckOutProducts from './CheckOutProducts'
+import { DarkModeContext } from '../../../context'
 
 const CheckOut = ({ cart }) => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
-      backgroundColor='#1CFBD3'
       justifyContent='center'
       sx={{
+        backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
         display: {
           lg: 'flex',
           md: 'flex',

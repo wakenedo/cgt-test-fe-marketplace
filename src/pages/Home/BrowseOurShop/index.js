@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography } from '@mui/material'
 import browseOurShop from '../../../assets/Home/BrowseShop.png'
 import homeLinkShop from '../../../assets/Home/Shop.png'
 import shopHomeImage from '../../../assets/Home/ShopHomeImage.jpg'
+import { DarkModeContext } from '../../../context'
 
 const BrowseOurShop = () => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box>
       <Box
@@ -34,6 +36,7 @@ const BrowseOurShop = () => {
         alignItems='center'
         justifyContent='space-between'
         sx={{
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
           marginBottom: {
             lg: '',
             md: '15px',

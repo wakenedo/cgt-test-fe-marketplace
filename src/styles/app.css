@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.App-light {
+  background-color: #e890fa;
+}
+
+.App-dark {
+  background-color: #261729;
+}
+
 body {
   background-color: #e890fa;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Box } from '@mui/material'
 
 import AddToCartButton from './AddToCartButton/index.js'
@@ -6,9 +6,11 @@ import ProductPrice from './ProductPrice/index.js'
 import ProductDescription from './ProductDescription/index.js'
 import LessDetail from './LessDetail/index.js'
 import MoreDetail from './MoreDetail/index.js'
+import { DarkModeContext } from '../../../context/index.js'
 
 
 const ProductInfo = ({ products, id }) => {
+  const { darkMode } = useContext(DarkModeContext)
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleIsOpen = () => {
@@ -21,8 +23,8 @@ const ProductInfo = ({ products, id }) => {
   if (isOpen === true) {
     return (
       <Box
-        backgroundColor='#1CFBD3'
         sx={{
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
           width: {
             lg: '500px'
           },
@@ -68,8 +70,8 @@ const ProductInfo = ({ products, id }) => {
   } else {
     return (
       <Box
-        backgroundColor='#1CFBD3'
         sx={{
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
           width: {
             lg: '500px'
           },
