@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import checkoutNewest from '../../../assets/Home/checkoutNewest.png'
+import { DarkModeContext } from '../../../context'
 
 
 const NewestProduct = ({ newestProduct }) => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
-      backgroundColor='#1CFBD3'
       sx={{
+        backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
         width: {
           lg: '750px',
           md: '450px',
-          xs: '360px',
+          xs: '340px',
         },
       }}
     >
@@ -34,7 +36,7 @@ const NewestProduct = ({ newestProduct }) => {
             style={{
               maxWidth: '340px',
               width: '100%',
-              height: '240px'
+              maxHeight: '240px'
             }}
           />
 
@@ -82,7 +84,7 @@ const NewestProduct = ({ newestProduct }) => {
                   marginLeft: {
                     lg: '480px',
                     md: '180px',
-                    xs: '140px',
+                    xs: '125px',
                   }
                 }}
               >

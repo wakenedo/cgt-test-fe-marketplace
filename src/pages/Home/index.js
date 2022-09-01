@@ -35,48 +35,66 @@ const Home = () => {
 
         <Box>
           <Box
-            marginTop='25px'
-            marginBottom='45px'
+            sx={{
+              margin: {
+                lg: '10px',
+                md: '10px',
+                xs: '5px',
+              },
+              padding: {
+                lg: '10px',
+                md: '10px',
+                xs: '5px'
+              }
+            }}
           >
-            <Welcome />
-          </Box>
-          <Box>
-            <Stack
-              sx={{
-                flexDirection: {
-                  lg: '',
-                  md: 'row',
-                  xs: 'column'
-                }
-              }}
-              direction='row'
-            >
+            <Box>
               <Box
-                sx={{
-                  marginLeft: {
-                    lg: '170px',
-                    md: '9px'
+                marginTop='25px'
+                marginBottom='45px'
+              >
+                <Welcome />
+              </Box>
 
-                  }
-                }}
-              >
-                <NewestProduct newestProduct={newestProduct} />
-              </Box>
-              <Box
+            </Box>
+            <Box>
+              <Stack
                 sx={{
-                  marginLeft: {
-                    lg: '50px',
-                    md: '10px',
-                    xs: '',
+                  flexDirection: {
+                    lg: '',
+                    md: 'row',
+                    xs: 'column'
                   }
                 }}
-                marginLeft='22px'
+                direction='row'
               >
-                <UserInterest userInterest={userInterest} />
-              </Box>
-            </Stack>
-            <BrowseOurShop />
+                <Box
+                  sx={{
+                    marginLeft: {
+                      lg: '170px',
+                      md: '0px'
+
+                    }
+                  }}
+                >
+                  <NewestProduct newestProduct={newestProduct} />
+                </Box>
+                <Box
+                  sx={{
+                    marginLeft: {
+                      lg: '30px',
+                      md: '6px',
+                      xs: '',
+                    }
+                  }}
+                  marginLeft='22px'
+                >
+                  <UserInterest userInterest={userInterest} />
+                </Box>
+              </Stack>
+            </Box>
           </Box>
+          <BrowseOurShop />
         </Box>
       </Box>
     </Box>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography } from '@mui/material'
 
 import magGlass from '../../../../assets/Cart/CartItem/MagGlass.png'
+import { DarkModeContext } from '../../../../context'
 
 const Item = ({ product }) => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
       sx={{
@@ -43,10 +45,10 @@ const Item = ({ product }) => {
         <Typography
 
           borderRadius='3px'
-          backgroundColor='#1CFBD3'
           color='#4B4B4B'
           fontWeight='bold'
           sx={{
+            backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
             fontSize: {
               lg: '22px',
               md: '18px',

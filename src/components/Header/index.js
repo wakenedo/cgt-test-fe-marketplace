@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box } from '@mui/material'
 
 
@@ -6,8 +6,12 @@ import { Box } from '@mui/material'
 import Nav from './Nav'
 import HeaderLogo from './HeaderLogo'
 import HeaderShop from './HeaderShop'
+import DarkThemeButton from '../DarkThemeButton'
+import { DarkModeContext } from '../../context'
+
 
 const Header = () => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
       display='flex'
@@ -16,9 +20,13 @@ const Header = () => {
       justifyContent='space-between'
       padding='10px'
       sx={{
-
-        backgroundColor: '#fdfdfd',
-        borderBottom: '1px solid #4B4B4B'
+        backgroundColor: darkMode ? '#E4E4E4' : '#fdfdfd',
+        borderBottom: '1px solid #4B4B4B',
+        marginBottom: {
+          lg: '10px',
+          md: '10px',
+          xs: '5px',
+        }
       }}
     >
       <Box
@@ -26,6 +34,8 @@ const Header = () => {
       >
         <HeaderLogo />
       </Box>
+      <DarkThemeButton />
+
       <HeaderShop />
       <Box>
         <Nav />

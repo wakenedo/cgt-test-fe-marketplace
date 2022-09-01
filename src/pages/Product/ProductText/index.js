@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import { Box } from '@mui/material'
 
@@ -7,8 +7,10 @@ import Description from './Description'
 import Header from './Header'
 import Comments from './Comments'
 import Reviews from './Reviews'
+import { DarkModeContext } from '../../../context'
 
 const ProductText = () => {
+  const { darkMode } = useContext(DarkModeContext)
   const [isActive, setIsActive] = useState(false)
 
   if (isActive === false) {
@@ -20,7 +22,9 @@ const ProductText = () => {
   }
   return (
     <Box
-      backgroundColor='#F7F7F7'
+      sx={{
+        backgroundColor: darkMode ? '#261729' : '#F7F7F7',
+      }}
     >
       <Header isActive={isActive} toggleActive={toggleActive} />
       <Description isActive={isActive} />

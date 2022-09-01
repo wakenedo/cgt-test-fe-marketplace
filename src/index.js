@@ -5,10 +5,9 @@ import { Provider } from 'react-redux'
 import { store } from './redux/store/index'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-
-
-
 import { BrowserRouter } from 'react-router-dom';
+
+import { DarkModeProvider } from './context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,7 +24,9 @@ root.render(
         draggable
         pauseOnHover
       />
-      <App />
+      <DarkModeProvider>
+        <App />
+      </DarkModeProvider>
     </Provider>
   </BrowserRouter>
 );

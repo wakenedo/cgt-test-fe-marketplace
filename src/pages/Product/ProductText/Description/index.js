@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography, List, ListItem } from '@mui/material'
+import { DarkModeContext } from '../../../../context'
 
 const Description = ({ isActive }) => {
+  const { darkMode } = useContext(DarkModeContext)
   if (isActive === 'Description') {
     return (
       <Box
-        border='1px solid #4B4B4B'
         borderRadius='2px'
         margin='10px'
+        sx={{
+          border: darkMode ? '1px solid #E4E4E4' : '1px solid #4B4B4B'
+        }}
       >
         <Box
           sx={{
@@ -37,7 +41,9 @@ const Description = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 3D Advanced crew escape suit astronaut modeled in high precision.
                 Used in the space shuttle nasa program ( atlantis, endeavor, dicovery, challenger, columbia, enterprise ) this is a mix between several references i found. this model has been accurately recreated in 3d High poly to keep every details.
@@ -53,7 +59,9 @@ const Description = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 The Quality you need :
                 First of all, this model was based on a several pictures and close up of the real product to provide you the best quality in terms of texture references and proportions.
@@ -69,7 +77,9 @@ const Description = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 The entire model was textured with its accessories relying on references and actual products.
               </Typography>
@@ -84,7 +94,9 @@ const Description = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 Textures may need to be relocate after uncompressing the Texture file.
               </Typography>
@@ -99,15 +111,18 @@ const Description = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 included :
               </Typography>
               <List>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -120,8 +135,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -134,8 +150,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -148,8 +165,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -162,8 +180,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -176,8 +195,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -190,8 +210,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',
@@ -204,8 +225,9 @@ const Description = ({ isActive }) => {
                 </ListItem>
                 <ListItem>
                   <Typography
-                    color='#4B4B4B'
+
                     sx={{
+                      color: darkMode ? '#E4E4E4' : '#4B4B4B',
                       fontSize: {
                         lg: '',
                         md: '13px',

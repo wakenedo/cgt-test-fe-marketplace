@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography } from '@mui/material'
+import { DarkModeContext } from '../../../../context'
 
 
 const Reviews = ({ isActive }) => {
+  const { darkMode } = useContext(DarkModeContext)
   if (isActive === 'Reviews') {
     return (
       <Box
@@ -38,7 +40,9 @@ const Reviews = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 This is the Product Review Section
               </Typography>
@@ -53,7 +57,9 @@ const Reviews = ({ isActive }) => {
               }}
             >
               <Typography
-                color='#4B4B4B'
+                sx={{
+                  color: darkMode ? '#E4E4E4' : '#4B4B4B'
+                }}
               >
                 Not implemented
               </Typography>

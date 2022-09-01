@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Typography } from '@mui/material'
+import { DarkModeContext } from '../../../context'
 
 const Greeting = ({ cart }) => {
+  const { darkMode } = useContext(DarkModeContext)
 
   const getTotalQuantity = () => {
     let total = 0
@@ -13,13 +15,13 @@ const Greeting = ({ cart }) => {
   if (getTotalQuantity() === 0) {
     return (
       <Box
-        backgroundColor='#1CFBD3'
         borderBottom='1px solid #4B4B4B'
         sx={{
-          marginBottom: {
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
+          margin: {
             lg: '',
-            md: '15px',
-            xs: '',
+            md: '10px',
+            xs: '4px',
           }
         }}
       >
@@ -28,12 +30,12 @@ const Greeting = ({ cart }) => {
             margin: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
           }}
           margin='10px'
@@ -88,13 +90,13 @@ const Greeting = ({ cart }) => {
   if (getTotalQuantity() === 1) {
     return (
       <Box
-        backgroundColor='#1CFBD3'
         borderBottom='1px solid #4B4B4B'
         sx={{
-          marginBottom: {
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
+          margin: {
             lg: '',
-            md: '15px',
-            xs: '',
+            md: '10px',
+            xs: '8px',
           }
         }}
       >
@@ -103,12 +105,12 @@ const Greeting = ({ cart }) => {
             margin: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
           }}
           margin='10px'
@@ -163,13 +165,13 @@ const Greeting = ({ cart }) => {
   else {
     return (
       <Box
-        backgroundColor='#1CFBD3'
         borderBottom='1px solid #4B4B4B'
         sx={{
-          marginBottom: {
+          backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
+          margin: {
             lg: '',
-            md: '15px',
-            xs: '',
+            md: '10px',
+            xs: '8px',
           }
         }}
       >
@@ -178,12 +180,12 @@ const Greeting = ({ cart }) => {
             margin: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
           }}
           margin='10px'

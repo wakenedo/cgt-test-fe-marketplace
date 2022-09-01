@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Box, Stack, Typography } from '@mui/material'
+import { DarkModeContext } from '../../../context'
 
 import UserInterestImage from '../../../assets/Home/UserInterestImage.png'
 
 const UserInterest = ({ userInterest }) => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <Box
-      backgroundColor='#1CFBD3'
       sx={{
+        backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
         width: {
           lg: '750px',
           md: '450px',
-          xs: '360px',
+          xs: '340px',
         }
       }}
     >
@@ -36,7 +38,7 @@ const UserInterest = ({ userInterest }) => {
             style={{
               maxWidth: '340px',
               width: '100%',
-              height: '240px'
+              height: '243px'
             }}
           />
 
@@ -84,7 +86,7 @@ const UserInterest = ({ userInterest }) => {
                   marginLeft: {
                     lg: '345px',
                     md: '65px',
-                    xs: '45px',
+                    xs: '25px',
                   }
                 }}
               >
