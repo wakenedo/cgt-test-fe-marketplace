@@ -11,12 +11,12 @@ const BrowseOurShop = () => {
           marginTop: {
             lg: '',
             md: '25px',
-            xs: ''
+            xs: '25px'
           },
           marginBottom: {
-            lg: '',
+            lg: '45px',
             md: '45px',
-            xs: ''
+            xs: '45px'
           }
         }}
       >
@@ -31,6 +31,7 @@ const BrowseOurShop = () => {
         backgroundColor='#1CFBD3'
         borderBottom='1px solid #4B4B4B'
         alignItems='center'
+        justifyContent='space-between'
         sx={{
           marginBottom: {
             lg: '',
@@ -49,7 +50,7 @@ const BrowseOurShop = () => {
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '5px',
             },
           }}
           margin='10px'
@@ -103,10 +104,10 @@ const BrowseOurShop = () => {
         </Box>
         <Box
           sx={{
-            marginLeft: {
-              lg: '15px',
-              md: '37%',
-              xs: '',
+            marginRight: {
+              lg: '5%',
+              md: '5%',
+              xs: '3%',
             }
           }}
         >
@@ -115,7 +116,7 @@ const BrowseOurShop = () => {
               marginTop: {
                 lg: '',
                 md: '5px',
-                xs: '',
+                xs: '5px',
               }
             }}
           >
