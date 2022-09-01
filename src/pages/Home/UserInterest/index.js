@@ -13,7 +13,7 @@ const UserInterest = ({ userInterest }) => {
         width: {
           lg: '750px',
           md: '450px',
-          xs: '360px',
+          xs: '340px',
         }
       }}
     >
@@ -38,7 +38,7 @@ const UserInterest = ({ userInterest }) => {
             style={{
               maxWidth: '340px',
               width: '100%',
-              height: '240px'
+              height: '243px'
             }}
           />
 
@@ -86,7 +86,7 @@ const UserInterest = ({ userInterest }) => {
                   marginLeft: {
                     lg: '345px',
                     md: '65px',
-                    xs: '45px',
+                    xs: '25px',
                   }
                 }}
               >

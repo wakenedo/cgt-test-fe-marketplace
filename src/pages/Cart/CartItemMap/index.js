@@ -16,7 +16,7 @@ const CartItemMap = ({ cart }) => {
           backgroundColor: darkMode ? '#7E4D88' : '#FFADFC',
           border: darkMode ? '1px solid #7E4D88' : '1px solid #FFADFC',
           height: {
-            lg: '700px',
+            lg: '750px',
             md: '660px',
             xs: '',
           },
@@ -79,8 +79,8 @@ const CartItemMap = ({ cart }) => {
           backgroundColor: darkMode ? '#7E4D88' : '#FFADFC',
           border: darkMode ? '0px solid #7E4D88' : '0px solid #FFADFC',
           minHeight: {
-            lg: '628px',
-            md: '600px',
+            lg: '668px',
+            md: '664px',
             xs: '',
           },
           width: {

@@ -20,9 +20,13 @@ const Header = () => {
       justifyContent='space-between'
       padding='10px'
       sx={{
-
         backgroundColor: darkMode ? '#E4E4E4' : '#fdfdfd',
-        borderBottom: '1px solid #4B4B4B'
+        borderBottom: '1px solid #4B4B4B',
+        marginBottom: {
+          lg: '10px',
+          md: '10px',
+          xs: '5px',
+        }
       }}
     >
       <Box

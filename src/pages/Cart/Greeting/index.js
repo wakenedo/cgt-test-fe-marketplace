@@ -18,10 +18,10 @@ const Greeting = ({ cart }) => {
         borderBottom='1px solid #4B4B4B'
         sx={{
           backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
-          marginBottom: {
+          margin: {
             lg: '',
-            md: '15px',
-            xs: '',
+            md: '10px',
+            xs: '4px',
           }
         }}
       >
@@ -30,12 +30,12 @@ const Greeting = ({ cart }) => {
             margin: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
           }}
           margin='10px'
@@ -93,10 +93,10 @@ const Greeting = ({ cart }) => {
         borderBottom='1px solid #4B4B4B'
         sx={{
           backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
-          marginBottom: {
+          margin: {
             lg: '',
-            md: '15px',
-            xs: '',
+            md: '10px',
+            xs: '8px',
           }
         }}
       >
@@ -105,12 +105,12 @@ const Greeting = ({ cart }) => {
             margin: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
           }}
           margin='10px'
@@ -168,10 +168,10 @@ const Greeting = ({ cart }) => {
         borderBottom='1px solid #4B4B4B'
         sx={{
           backgroundColor: darkMode ? '#E4E4E4' : '#1CFBD3',
-          marginBottom: {
+          margin: {
             lg: '',
-            md: '15px',
-            xs: '',
+            md: '10px',
+            xs: '8px',
           }
         }}
       >
@@ -180,12 +180,12 @@ const Greeting = ({ cart }) => {
             margin: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
             padding: {
               lg: '',
               md: '10px',
-              xs: '',
+              xs: '10px',
             },
           }}
           margin='10px'

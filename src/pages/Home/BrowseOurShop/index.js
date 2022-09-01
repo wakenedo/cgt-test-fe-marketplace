@@ -8,7 +8,20 @@ import { DarkModeContext } from '../../../context'
 const BrowseOurShop = () => {
   const { darkMode } = useContext(DarkModeContext)
   return (
-    <Box>
+    <Box
+      sx={{
+        margin: {
+          lg: '10px',
+          md: '10px',
+          xs: '5px',
+        },
+        padding: {
+          lg: '10px',
+          md: '10px',
+          xs: '5px'
+        }
+      }}
+    >
       <Box
         sx={{
           marginTop: {
@@ -47,12 +60,12 @@ const BrowseOurShop = () => {
         <Box
           sx={{
             margin: {
-              lg: '',
+              lg: '10px',
               md: '10px',
               xs: '',
             },
             padding: {
-              lg: '',
+              lg: '10px',
               md: '10px',
               xs: '5px',
             },
