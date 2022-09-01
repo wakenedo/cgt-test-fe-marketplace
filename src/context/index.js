@@ -5,7 +5,12 @@ const DarkModeContext = createContext()
 function DarkModeProvider(props) {
   const [darkMode, setDarkMode] = useState(localStorage.getItem('darkModeToggle') || false)
   const toggleDarkMode = () => {
-    localStorage.setItem('darkModeToggle', !darkMode)
+    console.log('Provider', darkMode)
+    if (darkMode) {
+      localStorage.removeItem('darkModeToggle')
+    } else {
+      localStorage.setItem('darkModeToggle', true)
+    }
     setDarkMode(!darkMode)
   }
 
