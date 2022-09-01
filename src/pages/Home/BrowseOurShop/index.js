@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 import browseOurShop from '../../../assets/Home/BrowseShop.png'
 import homeLinkShop from '../../../assets/Home/Shop.png'
+import shopHomeImage from '../../../assets/Home/ShopHomeImage.jpg'
 
 const BrowseOurShop = () => {
   return (
@@ -140,8 +141,23 @@ const BrowseOurShop = () => {
           </Box>
         </Box>
       </Box>
-      <Box>
-        <img src='' alt='shop-home' />
+      <Box
+        sx={{
+          marginLeft: {
+            lg: '20%',
+            md: '20%',
+            xs: '20%',
+          },
+          marginTop: {
+            xs: '10px'
+          }
+        }}
+      >
+        <img src={shopHomeImage} alt='shop-home'
+          style={{
+            width: '70%'
+          }}
+        />
       </Box>
     </Box>
   )

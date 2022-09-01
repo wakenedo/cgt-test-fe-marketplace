@@ -5,7 +5,14 @@ import headerLinkShop from '../../../assets/Header/HeaderShop.png'
 
 const HeaderShop = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        marginTop: {
+          md: '7px',
+          xs: '6px'
+        }
+      }}
+    >
       <a
         href='/Shop'
         style={{

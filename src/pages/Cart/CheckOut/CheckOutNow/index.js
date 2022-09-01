@@ -16,7 +16,7 @@ const CheckOutNow = ({ cart }) => {
         >
         </Box>
         <Typography>
-          Check out some awesome products !
+          Check out some awesome products in the Shop!
         </Typography>
       </Box>
     )

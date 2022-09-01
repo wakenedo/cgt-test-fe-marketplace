@@ -1,8 +1,16 @@
 import React from 'react'
+import { Box, Typography } from '@mui/material'
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <Box>
+      <Typography>
+        Shop Page
+      </Typography>
+      <Typography>
+        Not Implemented
+      </Typography>
+    </Box>
   )
 }
 
