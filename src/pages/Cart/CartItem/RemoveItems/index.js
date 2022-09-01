@@ -10,7 +10,7 @@ const RemoveItems = ({ product }) => {
 
   const handleClick = () => {
     dispatch(removeAllItems(product))
-    toast.success('You removed these items from cart!')
+    toast.success('Removed Successfully!')
   }
 
   return (

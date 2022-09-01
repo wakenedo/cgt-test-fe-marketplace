@@ -14,8 +14,8 @@ const CartItemMap = ({ cart }) => {
         backgroundColor='#FFADFC'
         sx={{
           height: {
-            lg: '',
-            md: '600px',
+            lg: '700px',
+            md: '660px',
             xs: '',
           },
           width: {
@@ -35,12 +35,12 @@ const CartItemMap = ({ cart }) => {
               xs: '150px',
             },
             height: {
-              lg: '',
+              lg: '350px',
               md: '350px',
               xs: '150px',
             },
             margin: {
-              lg: '100px 35%',
+              lg: '145px 37%',
               md: '100px 250px',
               xs: '100px',
             },
