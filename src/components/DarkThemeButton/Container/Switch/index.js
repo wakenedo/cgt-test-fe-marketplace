@@ -14,7 +14,11 @@ function Switch() {
   }
   console.log('Switch', darkMode, toggleDarkMode, DarkModeContext)
   return (
-    <Box>
+    <Box
+      sx={{
+        cursor: 'pointer',
+      }}
+    >
       <img
         width='45px'
         height='55px'
@@ -27,6 +31,7 @@ function Switch() {
         textAlign='center'
         color='#1CFBD3'
         sx={{
+
           color: darkMode ? '#4B4B4B' : '#1CFBD3'
         }}
       >
