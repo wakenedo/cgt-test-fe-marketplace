@@ -34,7 +34,6 @@ const cartSlice = createSlice({
       state.cart = state.cart.filter((item) => item.id !== action.payload.id);
       const reducingItemsPrice = action.payload.product.price * action.payload.quantity
       state.totalCartPrice = state.totalCartPrice - reducingItemsPrice
-      console.log('reducer removeAllItems Log', reducingItemsPrice, action.payload.product.price, action.payload.quantity)
     },
   },
 });

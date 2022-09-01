@@ -4,7 +4,6 @@ import { Typography } from '@mui/material'
 
 
 const ProductName = ({ products, id }) => {
-  console.log('ProductName', products, id)
   return (
     <Typography
       fontWeight='bold'

@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux'
 
 const CheckOutNow = ({ cart }) => {
   const { totalCartPrice } = useSelector((state) => state)
-  console.log('CheckOutNow Log', cart, totalCartPrice)
 
   if (cart.length === 0) {
     return (

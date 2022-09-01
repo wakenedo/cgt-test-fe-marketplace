@@ -10,6 +10,7 @@ import IntroImage from './IntroImage'
 
 
 import { fetchProducts } from '../../api/products'
+import BrowseOurShop from './BrowseOurShop'
 
 const Home = () => {
   const [newestProduct, setNewestProduct] = useState()
@@ -19,8 +20,6 @@ const Home = () => {
     const data = await fetchProducts()
     setNewestProduct(data[0])
     setUserInterest(data[1])
-    console.log('home', data)
-
   }
 
   useEffect(() => {
@@ -76,6 +75,7 @@ const Home = () => {
                 <UserInterest userInterest={userInterest} />
               </Box>
             </Stack>
+            <BrowseOurShop />
           </Box>
         </Box>
       </Box>

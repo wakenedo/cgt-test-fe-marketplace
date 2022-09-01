@@ -3,12 +3,19 @@ import { Box, Typography } from '@mui/material'
 import { useDispatch } from 'react-redux'
 import { removeAllItems } from '../../../../redux/cartSlice'
 import removeItems from '../../../../assets/Cart/CartItem/RemoveItems.png'
+import { toast } from 'react-toastify'
 
 const RemoveItems = ({ product }) => {
   const dispatch = useDispatch()
+
+  const handleClick = () => {
+    dispatch(removeAllItems(product))
+    toast.success('You removed these items from cart!')
+  }
+
   return (
     <Box
-      onClick={() => dispatch(removeAllItems(product))}
+      onClick={handleClick}
       display='flex'
       alignItems='center'
       position='absolute'

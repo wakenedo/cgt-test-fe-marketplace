@@ -7,10 +7,6 @@ import ListedItems from './ListedItems'
 const CheckOutProducts = () => {
   const cart = useSelector((state) => state.cart)
 
-
-
-  console.log('CheckOutProducts Log', cart,)
-
   if (cart.length === 0) {
     return
   } else {
@@ -48,7 +44,6 @@ const CheckOutProducts = () => {
                   const result = product.quantity * product.product.price
                   return result
                 }
-                console.log(product, id, quantity)
                 return (
                   <ListItem
                     key={id}

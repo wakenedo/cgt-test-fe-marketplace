@@ -5,6 +5,7 @@ import { Box } from '@mui/material'
 //Inner Components
 import Nav from './Nav'
 import HeaderLogo from './HeaderLogo'
+import HeaderShop from './HeaderShop'
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
       display='flex'
       alignItems='center'
       marginBottom='45px'
+      justifyContent='space-between'
       padding='10px'
       sx={{
 
@@ -24,17 +26,11 @@ const Header = () => {
       >
         <HeaderLogo />
       </Box>
-      <Box
-        sx={{
-          marginLeft: {
-            lg: '88%',
-            md: '75%',
-            xs: '135px'
-          }
-        }}
-      >
+      <HeaderShop />
+      <Box>
         <Nav />
       </Box>
+
     </Box>
   )
 }

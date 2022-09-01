@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../../../redux/cartSlice'
 import { Box, Button } from '@mui/material'
+import { toast } from 'react-toastify'
 
 //Assets
 import buyCart from '../../../../assets/Products/Cart.png'
@@ -10,17 +11,18 @@ const AddToCartButton = ({ products, id }) => {
   const dispatch = useDispatch()
   const product = products[id]
 
+  const handleClick = () => {
+    dispatch(addToCart({
+      product, id
+    }))
+    toast.success('You added to the cart !')
 
+  }
 
-  console.log('AddCartButton log', products[id], id, product)
   return (
     <Button
       variant='contained'
-      onClick={() =>
-        dispatch(addToCart({
-          product, id
-        }))
-      }
+      onClick={handleClick}
       sx={{
         fontSize: {
           lg: '13px',
