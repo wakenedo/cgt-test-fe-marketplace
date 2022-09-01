@@ -9,7 +9,7 @@ import CartItemMap from './CartItemMap'
 const Cart = () => {
   const cart = useSelector((state) => state.cart)
 
-  console.log('Cart Log', cart)
+
 
   return (
     <Box>
