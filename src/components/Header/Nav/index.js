@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <nav>
       <a
-        href="/cart">
+        href="/Cart">
         <Box
           display="flex"
           alignItems='center'
