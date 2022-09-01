@@ -7,7 +7,6 @@ const Description = ({ isActive }) => {
   if (isActive === 'Description') {
     return (
       <Box
-        border='1px solid #4B4B4B'
         borderRadius='2px'
         margin='10px'
         sx={{
