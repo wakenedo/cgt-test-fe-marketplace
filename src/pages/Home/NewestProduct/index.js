@@ -26,7 +26,7 @@ const NewestProduct = ({ newestProduct }) => {
           />
         </Box>
         <Box
-          margin='0px 15px'
+          margin='0px auto'
         >
           <img
             src={newestProduct?.image}

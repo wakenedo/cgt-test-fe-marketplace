@@ -28,7 +28,7 @@ const UserInterest = ({ userInterest }) => {
 
         </Box>
         <Box
-          margin='0px 15px'
+          margin='0px auto'
         >
           <img
             src={userInterest?.image}
