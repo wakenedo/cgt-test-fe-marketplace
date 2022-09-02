@@ -12,7 +12,6 @@ function Switch() {
   const handleClick = () => {
     toggleDarkMode();
   }
-  console.log('Switch', darkMode, toggleDarkMode, DarkModeContext)
   return (
     <Box
       sx={{
