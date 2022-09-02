@@ -13,8 +13,6 @@ import { DarkModeContext } from './context';
 
 function App() {
   const { darkMode } = useContext(DarkModeContext)
-
-  console.log('App', darkMode)
   return (
     <div className={darkMode ? `App App-dark` : `App App-light`}>
       <Header />
